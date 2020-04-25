@@ -20,7 +20,7 @@
 	<link rel="preconnect" href="//9qpuwspm.api.lncld.net">
 	<link rel="preconnect" href="//gravatar.loli.net">
 
-	<title>My Dream in the New Era | Wis Yoong</title>
+	<title>macOS 环境下配置 Derby 数据库 | Wis Yoong</title>
 
 	<meta name="HandheldFriendly" content="True">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -48,14 +48,14 @@
 
 	<meta property="og:site_name" content="Wis Yoong">
 	<meta property="og:type" content="article">
-	<meta property="og:title" content="My Dream in the New Era | Wis Yoong">
+	<meta property="og:title" content="macOS 环境下配置 Derby 数据库 | Wis Yoong">
 	<meta property="og:description" content>
-	<meta property="og:url" content="http://wisyoong.com/2020/04/23/My-Dream-in-the-New-Era/">
+	<meta property="og:url" content="http://wisyoong.com/2020/04/25/macOS-%E7%8E%AF%E5%A2%83%E4%B8%8B%E9%85%8D%E7%BD%AE-Derby-%E6%95%B0%E6%8D%AE%E5%BA%93/">
 
 	
-	<meta property="article:published_time" content="2020-04-23T17:04:00+08:00"> 
+	<meta property="article:published_time" content="2020-04-25T13:04:00+08:00"> 
 	<meta property="article:author" content="Wis Yoong">
-	<meta property="article:published_first" content="Wis Yoong, /2020/04/23/My-Dream-in-the-New-Era/">
+	<meta property="article:published_first" content="Wis Yoong, /2020/04/25/macOS-%E7%8E%AF%E5%A2%83%E4%B8%8B%E9%85%8D%E7%BD%AE-Derby-%E6%95%B0%E6%8D%AE%E5%BA%93/">
 	
 
 	
@@ -137,38 +137,72 @@
     <div class="inner">
         <header class="post-full-header">
             <div class="post-full-meta">
-                <time class="post-full-meta-date" datetime="2020-04-23T09:59:34.000Z">
-                    2020-04-23
+                <time class="post-full-meta-date" datetime="2020-04-25T05:33:01.000Z">
+                    2020-04-25
                 </time>
                 
                 <span class="date-divider">/</span>
                 
                 
             </div>
-            <h1 class="post-full-title">My Dream in the New Era</h1>
+            <h1 class="post-full-title">macOS 环境下配置 Derby 数据库</h1>
         </header>
-        <div class="post-full ">
-            
-            <figure class="post-full-image" style="background-image: url(https://i.loli.net/2020/04/23/WpO7NymeKwqYz3Q.jpg)">
-            </figure>
+        <div class="post-full no-image">
             
             <div class="post-full-content">
                 <article id="photoswipe" class="markdown-body">
-                    <p>As the rapid development of modern science and Internet technology, we are living in a new era, which features information appliance with information communicating and exchanging through Internet. President Xi proposed that we must strengthen the construction of information infrastructure, promote the deep integration of information resources and open up the “big artery” of information for economic and social development. Thus, creating and developing information technology help to build digital China. As a college student majoring in computer application technology in Information Engineering Department, I dream to be a software engineer.</p>
-<p>In such information era, social economic structure in China centers on service industry, which aims at meeting the needs of people’s better life. In addition, knowledge innovation is the main trend of society development. I always consider how to apply the knowledge learned from my major to create useful and significant computer software to help people solve the problems in life or at work. At present, I have an idea to explore auto fire alarm software. So how did this idea come about? Last term, when I returned to school, I found a big fire in the mountain at the back of our dormitory building. In no time, high wind with dense smoke blew into our dormitory district. Immediately and urgently, I called 119. Then, the fireman on the phone asked me where it was. I was so nervous and spent a lot of effort to make it clear. As the mountain was too big, I couldn’t provide him with a very specific address. Finally, the firemen found the address and extinguished the fire. Afterwards, I wondered if there was any way for firemen to receive the locating map online in computer or smart phone. In such way, fire site could be chased immediately. Thus, I imagine creating auto fire alarm software. </p>
-<p>In my imagination, the auto fire alarm software should possess the following function. Firstly, this software can capture the data of the weather, climate and geographical situation of the every location of the city at all times. Secondly, it can analyze the irregular data immediately according to the statistics of temperature, wind, air quality and so on. Thirdly, once the software inspects the irregular data of a location, it will automatically trigger a fire alarm by sending the GSP locating map of the fire to target receivers. The fire center can easily apply the software in the computer of the call center or smart phone of every fireman to receive the data. Every citizen should also install the software into smart phone so as to get informed of the fire or send the witnessed photos to the fire center. If this is achieved, it will greatly shorten the time of rescuing and evacuating the people in the fire spot.</p>
-<p>Realizing the significance of creating the auto fire alarm software, I am excited and eager to chase my dream right now. As a college student in grade one, I feel it crucial to master the core knowledge of software programming. In addition, I want to form an association at college to attract members who have great passion in this field. I also hope to receive support from my teachers to get precious supervision in the process of exploring the software of such kind.</p>
-<p> President Xi suggests that we roll up our sleeves and work with added energy to fulfill our dream. In the new era, I believe I can achieve my dream! I believe we can achieve our China Dream!</p>
+                    <ol>
+<li>打开终端，即 terminal。<br><img alt="terminal" class="post-img b-lazy" data-img="https://i.loli.net/2020/04/25/oytj6CABlp8av1D.png" data-index="0" data-src="https://i.loli.net/2020/04/25/oytj6CABlp8av1D.png"></li>
+</ol>
+<ol>
+<li><p>创建新的.bash_profile文件（如果有或创建过此文件，跳过此步骤）,输入</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch ~/.bash_profile</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>打开此文件,输入</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">open -t ~/.bash_profile</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>先对环境变量进行解释：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">JAVA_HOME: Java的安装路径（决定Java和Javac命令能不能用）；</span><br><span class="line">DERBY_HOME: Derby数据库的安装路径；</span><br><span class="line">PATH: 终端读取的路径（决定java -jar $DERBY_HOME&#x2F;lib&#x2F;derbyrun.jar server start能不能用）；</span><br><span class="line">CLASSPATH:class文件的安装路径（决定java org.apache.derby.tools.ij命令能不能用）；</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>接着继续，在刚打开的文件中添加Derby的环境变量。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">export JAVA_HOME&#x3D;&#x2F;Library&#x2F;Java&#x2F;JavaVirtualMachines&#x2F;jdk-10.0.2.jdk&#x2F;Contents&#x2F;Home</span><br><span class="line">export DERBY_HOME&#x3D;&#x2F;Library&#x2F;Java&#x2F;db-derby-10.14.2.0-bin</span><br><span class="line">export PATH&#x3D;$JAVA_HOME&#x2F;bin:$DERBY_HOME:.</span><br><span class="line">export CLASSPATH&#x3D;$DERBY_HOME&#x2F;lib&#x2F;derby.jar:$DERBY_HOME&#x2F;lib&#x2F;derbyclient.jar:$DERBY_HOME&#x2F;lib&#x2F;derbytools.jar:.</span><br></pre></td></tr></table></figure></li>
+<li><p>按cmd+s保存文件。</p>
+</li>
+<li><p>运行文件，使其生效，输入</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span>  ~/.bash_profile</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查看Derby信息，输入</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java org.apache.derby.tools.sysinfo</span><br></pre></td></tr></table></figure>
+<p>如果弹出以下内容则说明配置成功</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">------------------ Java 信息 ------------------</span><br><span class="line">Java Version:    10.0.2</span><br><span class="line">Java Vendor:     Oracle Corporation</span><br><span class="line">Java home:       /Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/jre</span><br><span class="line">Java classpath:  /Users/me/src:/Users/me/sw/z/db-derby-10.14.2.0-bin/lib/derby.jar:/Users/me/sw/z/db-derby-10.14.2.0-bin/lib/derby.war:/Users/me/sw/z/db-derby-10.14.2.0-bin/lib/derbyLocale_cs.jar:/Users/me/sw/z/db-derby-10.14.2.0-bin/lib/derbyLocale_de_DE.jar:/Users/me/sw/z/db-derby-10.14.2.0-bin/lib/derbyLocale_es.jar:/Users/me/sw/z/db-derby-10.14.2.0-bin/lib/derbyLocale_fr.jar:/Users/me/sw/z/db-derby-10.14.2.0-bin/lib/derbyLocale_hu.jar:/Users/me/sw/z/db-derby-10.14.2.0-bin/lib/derbyLocale_it.jar:/Users/me/sw/z/db-derby-10.14.2.0-bin/lib/derbyLocale_ja_JP.jar:/Users/me/sw/z/db-derby-10.14.2.0-bin/lib/derbyLocale_ko_KR.jar:/Users/me/sw/z/db-derby-10.14.2.0-bin/lib/derbyLocale_pl.jar:/Users/me/sw/z/db-derby-10.14.2.0-bin/lib/derbyLocale_pt_BR.jar:/Users/me/sw/z/db-derby-10.14.2.0-bin/lib/derbyLocale_ru.jar:/Users/me/sw/z/db-derby-10.14.2.0-bin/lib/derbyLocale_zh_CN.jar:/Users/me/sw/z/db-derby-10.14.2.0-bin/lib/derbyLocale_zh_TW.jar:/Users/me/sw/z/db-derby-10.14.2.0-bin/lib/derbyclient.jar:/Users/me/sw/z/db-derby-10.14.2.0-bin/lib/derbynet.jar:/Users/me/sw/z/db-derby-10.14.2.0-bin/lib/derbyoptionaltools.jar:/Users/me/sw/z/db-derby-10.14.2.0-bin/lib/derbyrun.jar:/Users/me/sw/z/db-derby-10.14.2.0-bin/lib/derbytools.jar:/Users/me/sw/db2jcc/lib/db2jcc.jar:/Users/me/sw/db2jcc/lib/db2jcc_license_c.jar:/Users/me/sw/mysql/connectorj/mysql-connector-java-5.0.7/mysql-connector-java-5.0.7-bin.jar:/Users/me/sw/demo/jdbc.concurrent/jars/jdbc-concurrent.jar:/Users/me/sw/demo/tableFunctionWhitePaper/jars/vtis-example.jar</span><br><span class="line">OS name:         Mac OS X</span><br><span class="line">OS architecture: x64_64</span><br><span class="line">OS version:      10.11.5</span><br><span class="line">Java user name:  me</span><br><span class="line">Java user home:  /Users/me</span><br><span class="line">Java user dir:   /Users/me/derby/branches/10.14</span><br><span class="line">java.specification.name: Java Platform API Specification</span><br><span class="line">java.specification.version: 1.8</span><br><span class="line">java.runtime.version: 1.8.0-b132</span><br><span class="line">----------------- Derby 信息 ------------------</span><br><span class="line">[/Library/Java/db-derby-10.14.2.0-bin/lib/derby.jar] 10.14.2.0 - (1828579)</span><br><span class="line">[/Library/Java/db-derby-10.14.2.0-bin/lib/derbytools.jar] 10.14.2.0 - (1828579)</span><br><span class="line">---------------- 区域设置信息 ------------------</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>接着，启动ij环境，输入</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java org.apache.derby.tools.ij</span><br></pre></td></tr></table></figure>
+<p>显示如下内容表示启动成功</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ij 版本 10.14</span><br><span class="line">ij&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>接着输入</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -jar <span class="variable">$DERBY_HOME</span>/lib/derbyrun.jar server start</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>启动Derby数据库服务器</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">MacBook:~ apple$ java -jar <span class="variable">$DERBY_HOME</span>/lib/derbyrun.jar server start</span><br><span class="line">Fri Oct 05 16:28:00 CST 2018 : 已使用基本服务器安全策略安装了 Security Manager。</span><br><span class="line">Fri Oct 05 16:28:22 CST 2018 : Apache Derby 网络服务器 - 10.14.2.0 - (1828579) 已启动并准备接受端口 1527 上的连接</span><br></pre></td></tr></table></figure></li>
+<li><p>到这里说明Derby数据库和服务器配置成功啦。</p>
+</li>
+</ol>
 
                 </article>
                 <ul class="tags-postTags">
                     
                     <li>
-                        <a href="/tags/%E7%AC%AC%E5%85%AD%E5%B1%8A%E5%B2%AD%E5%8D%97%E6%9D%AF%E8%8B%B1%E8%AF%AD%E5%86%99%E4%BD%9C%E6%8A%80%E8%83%BD%E5%A4%A7%E8%B5%9B/" rel="tag"># 第六届岭南杯英语写作技能大赛</a>
+                        <a href="/tags/masOS/" rel="tag"># masOS</a>
                     </li>
                     
                     <li>
-                        <a href="/tags/%E9%87%91%E7%AC%94%E5%A5%96/" rel="tag"># 金笔奖</a>
+                        <a href="/tags/Derby/" rel="tag"># Derby</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag"># 数据库</a>
                     </li>
                     
                 </ul>
@@ -179,14 +213,10 @@
     
     <nav id="gobottom" class="pagination">
         
-        <a class="prev-post" title="macOS 环境下配置 Derby 数据库" href="/2020/04/25/macOS-%E7%8E%AF%E5%A2%83%E4%B8%8B%E9%85%8D%E7%BD%AE-Derby-%E6%95%B0%E6%8D%AE%E5%BA%93/">
-            ← macOS 环境下配置 Derby 数据库
-        </a>
-        
         <span class="prev-next-post">·</span>
         
-        <a class="next-post" title="在 ubuntu 环境下用 caps lock 切换输入法" href="/2020/04/22/%E5%9C%A8-ubuntu-%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%94%A8-caps-lock-%E5%88%87%E6%8D%A2%E8%BE%93%E5%85%A5%E6%B3%95/">
-            在 ubuntu 环境下用 caps lock 切换输入法 →
+        <a class="next-post" title="My Dream in the New Era" href="/2020/04/23/My-Dream-in-the-New-Era/">
+            My Dream in the New Era →
         </a>
         
     </nav>
@@ -385,7 +415,7 @@
 			<a href="/" title="Wis Yoong">Wis Yoong &copy; 2020</a>
 			
 				
-			        <span hidden="true" id="/2020/04/23/My-Dream-in-the-New-Era/" class="leancloud-visitors" data-flag-title="My Dream in the New Era">
+			        <span hidden="true" id="/2020/04/25/macOS-%E7%8E%AF%E5%A2%83%E4%B8%8B%E9%85%8D%E7%BD%AE-Derby-%E6%95%B0%E6%8D%AE%E5%BA%93/" class="leancloud-visitors" data-flag-title="macOS 环境下配置 Derby 数据库">
 			            <span>阅读量 </span>
 			            <span class="leancloud-visitors-count">0</span>
 			        </span>
