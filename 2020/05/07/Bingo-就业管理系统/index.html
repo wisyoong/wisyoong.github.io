@@ -898,7 +898,73 @@
 <blockquote>
 <p>表4-8留言表</p>
 </blockquote>
-<p> | 列名    数据类型| 长度|     是否允许空| 说明 |<br> | :—–: | :—-: | :——: | :——: | :——: |<br> | id | int | 11    | 否 | identity | 主键 |<br> | user_id | int | 11 | 是 | 用户id | 外键 |<br> | user_name     | varchar | 20 | 是 | 用户名称 | 外键 |<br> | title | varchar | 100 | 是 | 标题 |<br> | content | text | 0 | 是 | 留言内容 |<br> | message_time | varchar | 50 | 是 | 留言时间<br> | reply | text | 0 | 是 | 回复内容 |<br> | reply_time | varchar |50 | 是 | 回复时间 |</p>
+<table>
+<thead>
+<tr>
+<th align="center">列名</th>
+<th align="center">数据类型</th>
+<th align="center">长度</th>
+<th align="center">是否允许空</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">id</td>
+<td align="center">int</td>
+<td align="center">11</td>
+<td align="center">否</td>
+<td align="center">identity</td>
+</tr>
+<tr>
+<td align="center">user_id</td>
+<td align="center">int</td>
+<td align="center">11</td>
+<td align="center">是</td>
+<td align="center">用户id</td>
+</tr>
+<tr>
+<td align="center">user_name</td>
+<td align="center">varchar</td>
+<td align="center">20</td>
+<td align="center">是</td>
+<td align="center">用户名称</td>
+</tr>
+<tr>
+<td align="center">title</td>
+<td align="center">varchar</td>
+<td align="center">100</td>
+<td align="center">是</td>
+<td align="center">标题</td>
+</tr>
+<tr>
+<td align="center">content</td>
+<td align="center">text</td>
+<td align="center">0</td>
+<td align="center">是</td>
+<td align="center">留言内容</td>
+</tr>
+<tr>
+<td align="center">message_time</td>
+<td align="center">varchar</td>
+<td align="center">50</td>
+<td align="center">是</td>
+<td align="center">留言时间</td>
+</tr>
+<tr>
+<td align="center">reply</td>
+<td align="center">text</td>
+<td align="center">0</td>
+<td align="center">是</td>
+<td align="center">回复内容</td>
+</tr>
+<tr>
+<td align="center">reply_time</td>
+<td align="center">varchar</td>
+<td align="center">50</td>
+<td align="center">是</td>
+<td align="center">回复时间</td>
+</tr>
+</tbody></table>
 </li>
 </ol>
 <h2 id="5-功能实现"><a href="#5-功能实现" class="headerlink" title="5    功能实现"></a>5    功能实现</h2><h3 id="5-1-登录模块"><a href="#5-1-登录模块" class="headerlink" title="5.1    登录模块"></a>5.1    登录模块</h3><p>使用Chrome浏览器进入系统登录平台。登录方式分别有邮箱和手机号两种。该系统有三种用户，但是用户不用告诉系统自己的账号是属于哪种类型的账号，系统会自动识别用户输入账号的类型，并登录到对应的页面。登录页面如下图5-1所示。<br><img alt="login-page" class="post-img b-lazy" data-img="https://i.loli.net/2020/05/07/lPot3UEgJcdzmYs.png" data-index="7" data-src="https://i.loli.net/2020/05/07/lPot3UEgJcdzmYs.png"></p>
