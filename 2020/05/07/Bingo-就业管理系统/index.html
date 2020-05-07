@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="preconnect" href="//www.googletagmanager.com">
+	<link rel="preconnect" href="//zz.bdstatic.com">
+	<link rel="preconnect" href="//sp0.baidu.com">
+	<link rel="preconnect" href="//www.google-analytics.com">
+	<link rel="preconnect" href="//cdn1.lncld.net">
+	<link rel="preconnect" href="//unpkg.com">
+	<link rel="preconnect" href="//app-router.leancloud.cn">
+	<link rel="preconnect" href="//9qpuwspm.api.lncld.net">
+	<link rel="preconnect" href="//gravatar.loli.net">
+
+	<title>Bingo 就业管理系统 | Wis Yoong</title>
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+	<meta name="generator" content="hexo">
+	<meta name="author" content="Wis Yoong">
+	<meta name="description" content>
+
+	
+	<meta name="keywords" content>
+	
+
+	
+	<link rel="shortcut icon" href="https://i.loli.net/2020/04/23/JrZj1lxov2wtLMO.png">
+	<link rel="apple-touch-icon" href="https://i.loli.net/2020/04/23/JrZj1lxov2wtLMO.png">
+	
+
+	
+	<meta name="theme-color" content="#3c484e">
+	<meta name="msapplication-TileColor" content="#3c484e">
+	
+
+	
+
+	
+
+	<meta property="og:site_name" content="Wis Yoong">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Bingo 就业管理系统 | Wis Yoong">
+	<meta property="og:description" content>
+	<meta property="og:url" content="http://wisyoong.com/2020/05/07/Bingo-%E5%B0%B1%E4%B8%9A%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/">
+
+	
+	<meta property="article:published_time" content="2020-05-07T21:05:00+08:00"> 
+	<meta property="article:author" content="Wis Yoong">
+	<meta property="article:published_first" content="Wis Yoong, /2020/05/07/Bingo-%E5%B0%B1%E4%B8%9A%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/">
+	
+
+	
+	
+	
+<link rel="stylesheet" href="/css/allinonecss.min.css">
+
+
+	
+	
+	
+</head>
+
+<body class="post-template">
+	<div class="site-wrapper">
+		
+
+
+
+
+<header class="site-header post-site-header outer">
+    <div class="inner">
+        
+<nav class="site-nav"> 
+    <div class="site-nav-left">
+        <ul class="nav">
+            <li>
+                
+                
+                <a class="site-nav-logo" href="/" title="Wis Yoong">
+                    <img src="https://i.loli.net/2020/04/23/JrZj1lxov2wtLMO.png" alt="Wis Yoong">
+                </a>
+                
+                
+            </li>
+            
+            
+            <li>
+                <a href="/about" title="ABOUT">ABOUT</a>
+            </li>
+            
+            <li>
+                <a href="/archives" title="归档">归档</a>
+            </li>
+            
+            
+        </ul> 
+    </div>
+    
+    <div class="search-button-area">
+        <a href="#search" class="search-button">Search ...</a>
+    </div>
+     
+    <div class="site-nav-right">
+        
+        <a href="#search" class="search-button">Search ...</a>
+         
+        
+<div class="social-links">
+    
+    
+    <a class="social-link" title="github" href="https://github.com/wisyoong" target="_blank" rel="noopener">
+        <svg viewbox="0 0 1049 1024" xmlns="http://www.w3.org/2000/svg"><path d="M524.979332 0C234.676191 0 0 234.676191 0 524.979332c0 232.068678 150.366597 428.501342 358.967656 498.035028 26.075132 5.215026 35.636014-11.299224 35.636014-25.205961 0-12.168395-0.869171-53.888607-0.869171-97.347161-146.020741 31.290159-176.441729-62.580318-176.441729-62.580318-23.467619-60.841976-58.234462-76.487055-58.234463-76.487055-47.804409-32.15933 3.476684-32.15933 3.476685-32.15933 53.019436 3.476684 80.83291 53.888607 80.83291 53.888607 46.935238 79.963739 122.553122 57.365291 152.97411 43.458554 4.345855-33.897672 18.252593-57.365291 33.028501-70.402857-116.468925-12.168395-239.022047-57.365291-239.022047-259.012982 0-57.365291 20.860106-104.300529 53.888607-140.805715-5.215026-13.037566-23.467619-66.926173 5.215027-139.067372 0 0 44.327725-13.906737 144.282399 53.888607 41.720212-11.299224 86.917108-17.383422 131.244833-17.383422s89.524621 6.084198 131.244833 17.383422C756.178839 203.386032 800.506564 217.29277 800.506564 217.29277c28.682646 72.1412 10.430053 126.029806 5.215026 139.067372 33.897672 36.505185 53.888607 83.440424 53.888607 140.805715 0 201.64769-122.553122 245.975415-239.891218 259.012982 19.121764 16.514251 35.636014 47.804409 35.636015 97.347161 0 70.402857-0.869171 126.898978-0.869172 144.282399 0 13.906737 9.560882 30.420988 35.636015 25.205961 208.601059-69.533686 358.967656-265.96635 358.967655-498.035028C1049.958663 234.676191 814.413301 0 524.979332 0z"/></svg>
+    </a>
+    
+    
+    
+    
+    
+    
+</div>
+    </div>
+</nav>
+    </div>
+</header>
+
+
+<div id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+        <header class="post-full-header">
+            <div class="post-full-meta">
+                <time class="post-full-meta-date" datetime="2020-05-07T13:43:48.000Z">
+                    2020-05-7
+                </time>
+                
+                <span class="date-divider">/</span>
+                
+                
+            </div>
+            <h1 class="post-full-title">Bingo 就业管理系统</h1>
+        </header>
+        <div class="post-full ">
+            
+            <figure class="post-full-image" style="background-image: url(https://i.loli.net/2020/05/07/WDAknrZ38lv4wUK.jpg)">
+            </figure>
+            
+            <div class="post-full-content">
+                <article id="photoswipe" class="markdown-body">
+                    <p>摘要： </p>
+<blockquote>
+<p>随着大学毕业人数和企业数量的增加，就业关系变得极其复杂。如果采用手工管理这些信息，不但耗时而且不便于分析。通过开发Bingo就业管理系统，学校可以准确了解就业情况，对此分析，作出决策；学生可以及时了解招聘信息，投递简历，完成就业；企业可以随时发布招聘信息，查看简历，招聘学生。因此Bingo就业管理系统可以有效解决就业信息管理的问题，方便学校、学生以及企业。</p>
+</blockquote>
+<p>关键词：</p>
+<blockquote>
+<p>就业；管理；招聘；学校</p>
+</blockquote>
+<p>项目演示：</p>
+<blockquote>
+<p><a href="http://121.199.72.181/" target="_blank" rel="noopener">www.bingo.wisyoong.com</a></p>
+</blockquote>
+<h2 id="1-引言"><a href="#1-引言" class="headerlink" title="1    引言"></a>1    引言</h2><p>随着大学毕业人数和企业数量的增加，就业关系变得极其复杂。学校渴望了解详细和完整的信息，保障学生的就业，甚至基于就业信息对今后发展作出战略性决策；学生渴望获取及时的招聘信息，投递简历，完成就业；企业渴望获取可靠的学生信息，聘请优秀人才。这些需求就对就业信息管理提出了新的要求。<br>采用手工管理就业信息，学校需要手动收集学生的就业信息、学生需要手动打印自己的简历信息、企业需要手动收集学生的简历，这些不但耗时而且不便于分析。<br>显然采用手工管理就业信息遇到瓶颈，已不能满足学校、学生、企业的需求。而当今日益发展的计算机技术恰好能满足这一需求，所以，就业管理系统就成了必需。该就业管理系统应该为学校、学生、企业提供充分的信息管理和方便的查询途径，可以方便、快捷、准确地获取学生信息、简历信息、企业信息、招聘信息和就业情况，使学校、学生、企业更加了解当前的就业情况。</p>
+<h2 id="2-需求概述"><a href="#2-需求概述" class="headerlink" title="2    需求概述"></a>2    需求概述</h2><h3 id="2-1-功能需求"><a href="#2-1-功能需求" class="headerlink" title="2.1    功能需求"></a>2.1    功能需求</h3><h4 id="一、-管理员（学校）用户"><a href="#一、-管理员（学校）用户" class="headerlink" title="一、 管理员（学校）用户"></a>一、 管理员（学校）用户</h4><ol>
+<li>用户管理：查看、审核和删除用户。</li>
+<li>学生信息：查看、修改和删除学生的信息。</li>
+<li>企业信息：查看、修改和修改企业的信息</li>
+<li>招聘信息：审阅招聘信息，删除不合规的招聘信息。</li>
+<li>就业信息：查看学生的就业情况。</li>
+<li>留言管理：查看学生、企业的留言，并对他们的留言进行回复。</li>
+</ol>
+<h4 id="二、-学生用户"><a href="#二、-学生用户" class="headerlink" title="二、 学生用户"></a>二、 学生用户</h4><ol>
+<li>简历管理：根据个人信息创建多个简历，删除简历，修改简历。</li>
+<li>招聘信息：查看企业发布的招聘信息，从已创建的多条简历中选择一个并。</li>
+<li>就业信息：查看已投递简历的招聘岗位、招聘公司、应聘状态以及取消应聘。</li>
+<li>留言：给管理员留言并查看管理员回复。</li>
+</ol>
+<h4 id="三、-企业用户"><a href="#三、-企业用户" class="headerlink" title="三、 企业用户"></a>三、 企业用户</h4><ol>
+<li>招聘信息：发布、修改和删除招聘信息</li>
+<li>就业信息：查看招聘信息的投递情况、查看简历、以及招聘学生。</li>
+<li>留言：给管理员留言、查看管理员回复和其他用户留言。</li>
+</ol>
+<h3 id="2-2-界面需求"><a href="#2-2-界面需求" class="headerlink" title="2.2    界面需求"></a>2.2    界面需求</h3><p>随着人们生活水平的提高，人们的审美日益提高；随着科技的发展,显示器的分辨率不断提高，显示器尺寸也各不相同；随着用户数量的增加，软件的数据量不断增加。这些都对软件的界面提出了新的要求。所以，软件的界面要美观，符合人们的审美要求；要兼容，适配不同的显示器，保证在大部分情况下，软件界面在不同窗口尺寸、不同屏幕尺寸、不同屏幕分辨率下,能正常显示；要简洁，放入庞大的数据，使用户能尽快找到需要的数据。一个好的界面能提高软件执行效率，能节省用户使用软件的操作时间，能使人们的心情舒畅，提高工作效率。</p>
+<h2 id="3-界面设计"><a href="#3-界面设计" class="headerlink" title="3    界面设计"></a>3    界面设计</h2><p>受谷歌Material Design的启发，该软件界面的边栏采用抽屉式设计，需要的时候显示，不需要的时候可以把它收起来，节省屏幕空间，如图3-1和图3-2所示。受Android的Toast和Mac OS的启发，该该项目加入了消息提醒框插件，当完成相关操作或出现错误时，在窗口的右下角会弹出消息框，如图4-1右下角，这样不仅简洁美观，而且减轻了服务器的负担。经过查阅大量相关资料，本系统的HTML标签的名字属性采用统一的命名方式，统一采用小写，统一采用“-”（减号）作为单词的分隔符号，比如<code>&lt;input name=”email”/&gt;</code>。经过精心调试，保证在大部分情况下，软件界面设计在不同窗口尺寸、不同屏幕尺寸、不同屏幕分辨下,能正常显示。<br><img alt="sidebar-display" class="post-img b-lazy" data-img="https://i.loli.net/2020/05/07/SlBbPgUCc4Y7GAT.png" data-index="0" data-src="https://i.loli.net/2020/05/07/SlBbPgUCc4Y7GAT.png"></p>
+<blockquote>
+<p>图3-1 边栏显示</p>
+</blockquote>
+<p> <img alt="sidebar-hidden" class="post-img b-lazy" data-img="https://i.loli.net/2020/05/07/hW7iIMpez1oCT3Q.png" data-index="1" data-src="https://i.loli.net/2020/05/07/hW7iIMpez1oCT3Q.png"></p>
+<blockquote>
+<p>图3-2 边栏隐藏</p>
+</blockquote>
+<h2 id="4-功能设计"><a href="#4-功能设计" class="headerlink" title="4    功能设计"></a>4    功能设计</h2><h3 id="4-1-系统模型"><a href="#4-1-系统模型" class="headerlink" title="4.1    系统模型"></a>4.1    系统模型</h3><p>通过需求分析可以画出如下系统模型，如下图4-1、4-2和4-3所示。<br><img alt="administrator-module-function-diagram" class="post-img b-lazy" data-img="https://i.loli.net/2020/05/07/RhzXytZwaHeIvlU.png" data-index="2" data-src="https://i.loli.net/2020/05/07/RhzXytZwaHeIvlU.png"></p>
+<blockquote>
+<p>图4-1 管理员模块功能图</p>
+</blockquote>
+<p><img alt="student-module functional-diagram" class="post-img b-lazy" data-img="https://i.loli.net/2020/05/07/jPlJ6CeUp8F4cNT.png" data-index="3" data-src="https://i.loli.net/2020/05/07/jPlJ6CeUp8F4cNT.png"></p>
+<blockquote>
+<p>图4-2 学生模块功能图</p>
+</blockquote>
+<p><img alt="enterprise-module-functions" class="post-img b-lazy" data-img="https://i.loli.net/2020/05/07/Um2bYLjX3ptkHQD.png" data-index="4" data-src="https://i.loli.net/2020/05/07/Um2bYLjX3ptkHQD.png"></p>
+<blockquote>
+<p>图4-3 企业模块功能图</p>
+</blockquote>
+<h3 id="4-2-系统结构"><a href="#4-2-系统结构" class="headerlink" title="4.2    系统结构"></a>4.2    系统结构</h3><p>通过对系统的需求和系统模型的分析，并对各个功能要求的分析，进行集中、分块、可得系统功能模块图。如下图4-4所示。<br><img alt="system-structure-function-module-diagram" class="post-img b-lazy" data-img="https://i.loli.net/2020/05/07/fcV2aZq8rmkpYvT.png" data-index="5" data-src="https://i.loli.net/2020/05/07/fcV2aZq8rmkpYvT.png"></p>
+<blockquote>
+<p>图4-4 系统结构功能模块图</p>
+</blockquote>
+<h3 id="4-3-系统组成"><a href="#4-3-系统组成" class="headerlink" title="4.3    系统组成"></a>4.3    系统组成</h3><p>课室管理系统最主要的是能够提供方便快捷的课室申请界面，管理员也能方便的进行审批，能在很短的时间内完成申报、审批、教室安排查询的操作。Bingo就业管理系统的组成部分主要包括用户登录、注册用户、修改密码、添加学生信息、修改学生信息、删除学生信息、添加企业信息、修改企业信息、删除企业信息、添加简历、修改简历、删除简历、投递简历、取消应聘、发布招聘信息、修改招聘信息、删除招聘信息、审阅学生简历、查看就业信息、留言20个。</p>
+<h3 id="4-4-E-R图"><a href="#4-4-E-R图" class="headerlink" title="4.4    E-R图"></a>4.4    E-R图</h3><p>根据系统的需求，对数据库进行设计，并画出E-R图，如图4-6所示。<br><img alt="E-R-diagram" class="post-img b-lazy" data-img="https://i.loli.net/2020/05/07/yDj13uvPOZUNqc5.jpg" data-index="6" data-src="https://i.loli.net/2020/05/07/yDj13uvPOZUNqc5.jpg"></p>
+<blockquote>
+<p>图4-6 系统功能图</p>
+</blockquote>
+<h3 id="4-5-数据库对象"><a href="#4-5-数据库对象" class="headerlink" title="4.5    数据库对象"></a>4.5    数据库对象</h3><ol>
+<li><p>bingo数据库对象汇总表，如下表4-1所示。</p>
+<blockquote>
+<p>表4-1 数据库对象汇总表</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="center">名称</th>
+<th align="center">类型</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">user</td>
+<td align="center">基本表</td>
+<td align="center">用户的基本信息</td>
+</tr>
+<tr>
+<td align="center">student</td>
+<td align="center">基本表</td>
+<td align="center">存储学生的基本信息</td>
+</tr>
+<tr>
+<td align="center">company</td>
+<td align="center">基本表</td>
+<td align="center">存储企业的基本信息</td>
+</tr>
+<tr>
+<td align="center">resume</td>
+<td align="center">基本表</td>
+<td align="center">存储简历信息</td>
+</tr>
+<tr>
+<td align="center">recruit</td>
+<td align="center">基本表</td>
+<td align="center">存储招聘信息</td>
+</tr>
+<tr>
+<td align="center">employment</td>
+<td align="center">基本表</td>
+<td align="center">储存就业信息</td>
+</tr>
+<tr>
+<td align="center">message</td>
+<td align="center">基本表</td>
+<td align="center">储存留言信息</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>用户表(user表),如下表4-2所示。</p>
+<blockquote>
+<p>表4-2 用户表</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="center">列名</th>
+<th align="center">数据类型</th>
+<th align="center">长度</th>
+<th align="center">是否允许空</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">id</td>
+<td align="center">int</td>
+<td align="center">11</td>
+<td align="center">否</td>
+<td align="center">identity</td>
+</tr>
+<tr>
+<td align="center">email</td>
+<td align="center">varchar</td>
+<td align="center">50</td>
+<td align="center">是</td>
+<td align="center">用于登录的邮箱</td>
+</tr>
+<tr>
+<td align="center">phone_number</td>
+<td align="center">varchar</td>
+<td align="center">5</td>
+<td align="center">是</td>
+<td align="center">用于登录的手机号</td>
+</tr>
+<tr>
+<td align="center">password</td>
+<td align="center">varchar</td>
+<td align="center">50</td>
+<td align="center">否</td>
+<td align="center">登录密码</td>
+</tr>
+<tr>
+<td align="center">name</td>
+<td align="center">varchar</td>
+<td align="center">50</td>
+<td align="center">否</td>
+<td align="center">用户的真实名称</td>
+</tr>
+<tr>
+<td align="center">nickname</td>
+<td align="center">varchar</td>
+<td align="center">50</td>
+<td align="center">是</td>
+<td align="center">用户的昵称</td>
+</tr>
+<tr>
+<td align="center">user_type</td>
+<td align="center">varchar</td>
+<td align="center">20</td>
+<td align="center">否</td>
+<td align="center">用户类型</td>
+</tr>
+<tr>
+<td align="center">verify</td>
+<td align="center">varchar</td>
+<td align="center">1</td>
+<td align="center">否</td>
+<td align="center">验证状态</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>学生表(student表)，如下表4-3所示。</p>
+<blockquote>
+<p>表4-3 学生表</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="center">列名</th>
+<th align="center">数据类型</th>
+<th align="center">长度</th>
+<th align="center">是否允许空</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">user_id</td>
+<td align="center">int</td>
+<td align="center">11</td>
+<td align="center">否</td>
+<td align="center">identity</td>
+</tr>
+<tr>
+<td align="center">user_name</td>
+<td align="center">varchar</td>
+<td align="center">50</td>
+<td align="center">否</td>
+<td align="center">学生的真实姓名、外键</td>
+</tr>
+<tr>
+<td align="center">gender</td>
+<td align="center">varchar</td>
+<td align="center">2</td>
+<td align="center">否</td>
+<td align="center">性别</td>
+</tr>
+<tr>
+<td align="center">id_number</td>
+<td align="center">varchar</td>
+<td align="center">20</td>
+<td align="center">否</td>
+<td align="center">身份证号</td>
+</tr>
+<tr>
+<td align="center">school</td>
+<td align="center">varchar</td>
+<td align="center">50</td>
+<td align="center">是</td>
+<td align="center">学校</td>
+</tr>
+<tr>
+<td align="center">department</td>
+<td align="center">varchar</td>
+<td align="center">50</td>
+<td align="center">是</td>
+<td align="center">院系</td>
+</tr>
+<tr>
+<td align="center">major</td>
+<td align="center">varchar</td>
+<td align="center">50</td>
+<td align="center">是</td>
+<td align="center">专业</td>
+</tr>
+<tr>
+<td align="center">education</td>
+<td align="center">varchar</td>
+<td align="center">10</td>
+<td align="center">是</td>
+<td align="center">教育程度</td>
+</tr>
+<tr>
+<td align="center">entrance_date</td>
+<td align="center">varchar</td>
+<td align="center">10</td>
+<td align="center">否</td>
+<td align="center">入学时间</td>
+</tr>
+<tr>
+<td align="center">native_place</td>
+<td align="center">varchar</td>
+<td align="center">200</td>
+<td align="center">是</td>
+<td align="center">出生地</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>企业表(company表)，如下表4-4所示。</p>
+<blockquote>
+<p>表4-4 企业表</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="center">列名</th>
+<th align="center">数据类型</th>
+<th align="center">长度</th>
+<th align="center">是否允许空</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">user_id</td>
+<td align="center">int</td>
+<td align="center">11</td>
+<td align="center">否</td>
+<td align="center">identity</td>
+</tr>
+<tr>
+<td align="center">user_name</td>
+<td align="center">varchar</td>
+<td align="center">50</td>
+<td align="center">是</td>
+<td align="center">企业的真实名称</td>
+</tr>
+<tr>
+<td align="center">property</td>
+<td align="center">varchar</td>
+<td align="center">50</td>
+<td align="center">是</td>
+<td align="center">企业的性质</td>
+</tr>
+<tr>
+<td align="center">license_number</td>
+<td align="center">varchar</td>
+<td align="center">50</td>
+<td align="center">是</td>
+<td align="center">营业执照</td>
+</tr>
+<tr>
+<td align="center">industry</td>
+<td align="center">varchar</td>
+<td align="center">50</td>
+<td align="center">是</td>
+<td align="center">所属行业</td>
+</tr>
+<tr>
+<td align="center">scale</td>
+<td align="center">varchar</td>
+<td align="center">10</td>
+<td align="center">是</td>
+<td align="center">单位规模</td>
+</tr>
+<tr>
+<td align="center">address</td>
+<td align="center">varchar</td>
+<td align="center">200</td>
+<td align="center">是</td>
+<td align="center">企业地址</td>
+</tr>
+<tr>
+<td align="center">website</td>
+<td align="center">varchar</td>
+<td align="center">50</td>
+<td align="center">是</td>
+<td align="center">企业官网</td>
+</tr>
+<tr>
+<td align="center">linkman</td>
+<td align="center">varchar</td>
+<td align="center">50</td>
+<td align="center">是</td>
+<td align="center">联系人</td>
+</tr>
+<tr>
+<td align="center">phone_number</td>
+<td align="center">varchar</td>
+<td align="center">20</td>
+<td align="center">是</td>
+<td align="center">电话号码</td>
+</tr>
+<tr>
+<td align="center">email</td>
+<td align="center">varchar</td>
+<td align="center">20</td>
+<td align="center">是</td>
+<td align="center">电子邮箱</td>
+</tr>
+<tr>
+<td align="center">postcode</td>
+<td align="center">varchar</td>
+<td align="center">10</td>
+<td align="center">是</td>
+<td align="center">邮政编码</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>简历表(resume表)，如下表4-5所示。</p>
+<blockquote>
+<p>表4-5 简历表</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="center">列名</th>
+<th align="center">数据类型</th>
+<th align="center">长度</th>
+<th align="center">是否允许空</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">id</td>
+<td align="center">int</td>
+<td align="center">11</td>
+<td align="center">否</td>
+<td align="center">identity</td>
+</tr>
+<tr>
+<td align="center">user_id    int</td>
+<td align="center">11</td>
+<td align="center">否</td>
+<td align="center">用户id</td>
+<td align="center">外键</td>
+</tr>
+<tr>
+<td align="center">user_name</td>
+<td align="center">varchar</td>
+<td align="center">50</td>
+<td align="center">是</td>
+<td align="center">用户姓名</td>
+</tr>
+<tr>
+<td align="center">gender</td>
+<td align="center">varchar</td>
+<td align="center">2</td>
+<td align="center">否</td>
+<td align="center">性别</td>
+</tr>
+<tr>
+<td align="center">birthdate</td>
+<td align="center">varchar</td>
+<td align="center">10</td>
+<td align="center">是</td>
+<td align="center">生日</td>
+</tr>
+<tr>
+<td align="center">nation</td>
+<td align="center">varchar</td>
+<td align="center">20</td>
+<td align="center">否</td>
+<td align="center">民族</td>
+</tr>
+<tr>
+<td align="center">politics</td>
+<td align="center">varchar</td>
+<td align="center">20</td>
+<td align="center">是</td>
+<td align="center">政治面貌</td>
+</tr>
+<tr>
+<td align="center">graduation</td>
+<td align="center">varchar</td>
+<td align="center">10</td>
+<td align="center">是</td>
+<td align="center">毕业时间</td>
+</tr>
+<tr>
+<td align="center">school</td>
+<td align="center">varchar</td>
+<td align="center">50</td>
+<td align="center">是</td>
+<td align="center">学校</td>
+</tr>
+<tr>
+<td align="center">major</td>
+<td align="center">varchar</td>
+<td align="center">20</td>
+<td align="center">是</td>
+<td align="center">专业</td>
+</tr>
+<tr>
+<td align="center">education</td>
+<td align="center">varchar</td>
+<td align="center">10</td>
+<td align="center">是</td>
+<td align="center">教育程度</td>
+</tr>
+<tr>
+<td align="center">email</td>
+<td align="center">varchar</td>
+<td align="center">20</td>
+<td align="center">是</td>
+<td align="center">电子邮箱</td>
+</tr>
+<tr>
+<td align="center">phone_number</td>
+<td align="center">varchar</td>
+<td align="center">50</td>
+<td align="center">是</td>
+<td align="center">联系电话</td>
+</tr>
+<tr>
+<td align="center">foreign_language</td>
+<td align="center">varchar</td>
+<td align="center">50</td>
+<td align="center">是</td>
+<td align="center">外语水平</td>
+</tr>
+<tr>
+<td align="center">hobby</td>
+<td align="center">text</td>
+<td align="center">0</td>
+<td align="center">是</td>
+<td align="center">特长爱好</td>
+</tr>
+<tr>
+<td align="center">practice</td>
+<td align="center">text</td>
+<td align="center">0</td>
+<td align="center">是</td>
+<td align="center">实践经历</td>
+</tr>
+<tr>
+<td align="center">position</td>
+<td align="center">text</td>
+<td align="center">0</td>
+<td align="center">是</td>
+<td align="center">担任职位</td>
+</tr>
+<tr>
+<td align="center">honor</td>
+<td align="center">text</td>
+<td align="center">0</td>
+<td align="center">是</td>
+<td align="center">获奖情况</td>
+</tr>
+<tr>
+<td align="center">research</td>
+<td align="center">text</td>
+<td align="center">0</td>
+<td align="center">是</td>
+<td align="center">科研成果</td>
+</tr>
+<tr>
+<td align="center">self_evaluation</td>
+<td align="center">text</td>
+<td align="center">0</td>
+<td align="center">是</td>
+<td align="center">自我评价</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>招聘表(recruit表)，如下表4-6所示。</p>
+<blockquote>
+<p>表4-6 招聘表</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="center">列名</th>
+<th align="center">数据类型</th>
+<th align="center">长度</th>
+<th align="center">是否允许空</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">id</td>
+<td align="center">int</td>
+<td align="center">11</td>
+<td align="center">否</td>
+<td align="center">identity 主键</td>
+</tr>
+<tr>
+<td align="center">user_id    int</td>
+<td align="center">11</td>
+<td align="center">是</td>
+<td align="center">用户id外键</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">user_name</td>
+<td align="center">varchar</td>
+<td align="center">50</td>
+<td align="center">是</td>
+<td align="center">企业名称</td>
+</tr>
+<tr>
+<td align="center">company_address</td>
+<td align="center">varchar</td>
+<td align="center">50</td>
+<td align="center">是</td>
+<td align="center">企业地址</td>
+</tr>
+<tr>
+<td align="center">position</td>
+<td align="center">varchar</td>
+<td align="center">50</td>
+<td align="center">是</td>
+<td align="center">职位</td>
+</tr>
+<tr>
+<td align="center">position_type</td>
+<td align="center">varchar</td>
+<td align="center">10</td>
+<td align="center">是</td>
+<td align="center">职务类型</td>
+</tr>
+<tr>
+<td align="center">edu_require</td>
+<td align="center">varchar</td>
+<td align="center">50</td>
+<td align="center">是</td>
+<td align="center">学历要求</td>
+</tr>
+<tr>
+<td align="center">experience</td>
+<td align="center">varchar</td>
+<td align="center">50</td>
+<td align="center">是</td>
+<td align="center">工作经验</td>
+</tr>
+<tr>
+<td align="center">recruitment</td>
+<td align="center">int</td>
+<td align="center">11</td>
+<td align="center">是</td>
+<td align="center">招聘人数</td>
+</tr>
+<tr>
+<td align="center">work_place</td>
+<td align="center">varchar</td>
+<td align="center">50</td>
+<td align="center">是</td>
+<td align="center">工作地点</td>
+</tr>
+<tr>
+<td align="center">brance</td>
+<td align="center">varchar</td>
+<td align="center">50</td>
+<td align="center">是</td>
+<td align="center">所属部门</td>
+</tr>
+<tr>
+<td align="center">description</td>
+<td align="center">varchar</td>
+<td align="center">200</td>
+<td align="center">是</td>
+<td align="center">职位描述</td>
+</tr>
+<tr>
+<td align="center">postcode</td>
+<td align="center">varchar</td>
+<td align="center">50</td>
+<td align="center">是</td>
+<td align="center">邮政编码</td>
+</tr>
+<tr>
+<td align="center">phone_number</td>
+<td align="center">varchar</td>
+<td align="center">20</td>
+<td align="center">是</td>
+<td align="center">电话号码</td>
+</tr>
+<tr>
+<td align="center">linkman</td>
+<td align="center">varchar</td>
+<td align="center">20</td>
+<td align="center">是</td>
+<td align="center">联系人</td>
+</tr>
+<tr>
+<td align="center">email</td>
+<td align="center">varchar</td>
+<td align="center">50</td>
+<td align="center">是</td>
+<td align="center">电子邮箱</td>
+</tr>
+<tr>
+<td align="center">website</td>
+<td align="center">varchar</td>
+<td align="center">20</td>
+<td align="center">是</td>
+<td align="center">公司官网</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>就业表(employment表)，如下表4-7所示。</p>
+<blockquote>
+<p>表4-7 就业表</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="center">列名</th>
+<th align="center">数据类型</th>
+<th align="center">长度</th>
+<th align="center">是否允许空</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">id</td>
+<td align="center">int</td>
+<td align="center">11</td>
+<td align="center">否</td>
+<td align="center">identity</td>
+</tr>
+<tr>
+<td align="center">recruit_id    int</td>
+<td align="center">int</td>
+<td align="center">50</td>
+<td align="center">是</td>
+<td align="center">招聘id</td>
+</tr>
+<tr>
+<td align="center">resume_id    int</td>
+<td align="center">int</td>
+<td align="center">50</td>
+<td align="center">是</td>
+<td align="center">简历id</td>
+</tr>
+<tr>
+<td align="center">recruit_user_id</td>
+<td align="center">int</td>
+<td align="center">50</td>
+<td align="center">是</td>
+<td align="center">企业用户id</td>
+</tr>
+<tr>
+<td align="center">recruit_user_name</td>
+<td align="center">int</td>
+<td align="center">50</td>
+<td align="center">是</td>
+<td align="center">企业用户名称</td>
+</tr>
+<tr>
+<td align="center">resume_user_id</td>
+<td align="center">int</td>
+<td align="center">50</td>
+<td align="center">是</td>
+<td align="center">学生用户id</td>
+</tr>
+<tr>
+<td align="center">resume_user_name</td>
+<td align="center">int</td>
+<td align="center">50</td>
+<td align="center">是</td>
+<td align="center">学生用户姓名</td>
+</tr>
+<tr>
+<td align="center">position</td>
+<td align="center">int</td>
+<td align="center">50</td>
+<td align="center">是</td>
+<td align="center">应聘职位</td>
+</tr>
+<tr>
+<td align="center">status</td>
+<td align="center">int</td>
+<td align="center">50</td>
+<td align="center">是</td>
+<td align="center">应聘状态</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>留言表(message表)，如下表4-8所示。</p>
+<blockquote>
+<p>表4-8留言表</p>
+</blockquote>
+<p> | 列名    数据类型| 长度|     是否允许空| 说明 |<br> | :—–: | :—-: | :——: | :——: | :——: |<br> | id | int | 11    | 否 | identity | 主键 |<br> | user_id | int | 11 | 是 | 用户id | 外键 |<br> | user_name     | varchar | 20 | 是 | 用户名称 | 外键 |<br> | title | varchar | 100 | 是 | 标题 |<br> | content | text | 0 | 是 | 留言内容 |<br> | message_time | varchar | 50 | 是 | 留言时间<br> | reply | text | 0 | 是 | 回复内容 |<br> | reply_time | varchar |50 | 是 | 回复时间 |</p>
+</li>
+</ol>
+<h2 id="5-功能实现"><a href="#5-功能实现" class="headerlink" title="5    功能实现"></a>5    功能实现</h2><h3 id="5-1-登录模块"><a href="#5-1-登录模块" class="headerlink" title="5.1    登录模块"></a>5.1    登录模块</h3><p>使用Chrome浏览器进入系统登录平台。登录方式分别有邮箱和手机号两种。该系统有三种用户，但是用户不用告诉系统自己的账号是属于哪种类型的账号，系统会自动识别用户输入账号的类型，并登录到对应的页面。登录页面如下图5-1所示。<br><img alt="login-page" class="post-img b-lazy" data-img="https://i.loli.net/2020/05/07/lPot3UEgJcdzmYs.png" data-index="7" data-src="https://i.loli.net/2020/05/07/lPot3UEgJcdzmYs.png"></p>
+<blockquote>
+<p>图5-1 登录页面</p>
+</blockquote>
+<p>功能实现代码如下：</p>
+<figure class="highlight java"><figcaption><span>protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException &#123;</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">	UserDao userDao=<span class="keyword">new</span> UserDaoImpl();</span><br><span class="line">	HttpSession session=request.getSession();</span><br><span class="line">	String loginField=request.getParameter(<span class="string">"login-field"</span>);</span><br><span class="line">	String password=request.getParameter(<span class="string">"password"</span>);</span><br><span class="line">	User user=<span class="keyword">new</span> User();</span><br><span class="line">	user.setPassword(password);</span><br><span class="line">	User u=<span class="keyword">null</span>;</span><br><span class="line">	<span class="keyword">if</span>(isEmail(loginField)) &#123;</span><br><span class="line">		user.setEmail(loginField);</span><br><span class="line">		u=userDao.findUserByEmailPassword(user);</span><br><span class="line">	&#125;<span class="keyword">else</span> <span class="keyword">if</span>(isPhoneNumber(loginField))&#123;</span><br><span class="line">		user.setPhoneNumber(loginField);</span><br><span class="line">		u=userDao.findUserByPhoneNumberPassword(user);</span><br><span class="line">	&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">		<span class="keyword">this</span>.createToast(<span class="string">"邮箱或手机号格式不正确"</span>, <span class="string">"info"</span>, request, response);</span><br><span class="line">		<span class="keyword">this</span>.goToPage(<span class="string">"pages/common/login.jsp"</span>, request, response);</span><br><span class="line">		<span class="keyword">return</span>;</span><br><span class="line">	&#125;	</span><br><span class="line">	<span class="keyword">if</span>(u.getUserType().equals(<span class="string">"not_found"</span>)) &#123;</span><br><span class="line">		<span class="keyword">this</span>.createToast(<span class="string">"账户不存在或密码错误"</span>, <span class="string">"danger"</span>, request, response);</span><br><span class="line">		<span class="keyword">this</span>.goToPage(<span class="string">"pages/common/login.jsp"</span>, request, response);</span><br><span class="line">	&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">		<span class="keyword">if</span>(u.getVerify().equals(<span class="string">"1"</span>)) &#123;</span><br><span class="line">			<span class="keyword">this</span>.createToast(<span class="string">"用户未激活,请联系管理员"</span>, <span class="string">"info"</span>, request, response);</span><br><span class="line">			<span class="keyword">this</span>.goToPage(<span class="string">"pages/common/login.jsp"</span>, request, response);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(u.getVerify().equals(<span class="string">"2"</span>)) &#123; </span><br><span class="line">			session.setAttribute(<span class="string">"currentUser"</span>, u);</span><br><span class="line">			<span class="keyword">if</span>(u.getUserType().equals(<span class="string">"admin"</span>)) &#123;</span><br><span class="line">				<span class="keyword">this</span>.createToast(<span class="string">"管理员登录成功"</span>, <span class="string">"success"</span>, request, response);</span><br><span class="line">				<span class="keyword">this</span>.goToPage(<span class="string">"pages/admin/adminIndex.jsp"</span>, request, response);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span>(u.getUserType().equals(<span class="string">"student"</span>)) &#123;</span><br><span class="line">				<span class="keyword">this</span>.createToast(<span class="string">"学生登录成功"</span>, <span class="string">"success"</span>, request, response);</span><br><span class="line">				<span class="keyword">this</span>.goToPage(<span class="string">"pages/student/studentIndex.jsp"</span>, request, response);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span>(u.getUserType().equals(<span class="string">"company"</span>)) &#123;</span><br><span class="line">				<span class="keyword">this</span>.createToast(<span class="string">"企业登录成功"</span>, <span class="string">"success"</span>, request, response);</span><br><span class="line">				<span class="keyword">this</span>.goToPage(<span class="string">"pages/company/companyIndex.jsp"</span>, request, response);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(u.getVerify().equals(<span class="string">"3"</span>)) &#123;</span><br><span class="line">			<span class="keyword">this</span>.createToast(<span class="string">"用户审核未通过,请联系管理员"</span>, <span class="string">"danger"</span>, request, response);</span><br><span class="line">			<span class="keyword">this</span>.goToPage(<span class="string">"pages/common/login.jsp"</span>, request, response);</span><br><span class="line">		&#125;</span><br><span class="line">	 &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="5-2-注册模块"><a href="#5-2-注册模块" class="headerlink" title="5.2    注册模块"></a>5.2    注册模块</h3><p>可注册的用户类型有管理员、学生和企业，使用邮箱和手机号注册，如图5-2所示。<br><img alt="register-page" class="post-img b-lazy" data-img="https://i.loli.net/2020/05/07/rLaVFib42G3567A.png" data-index="8" data-src="https://i.loli.net/2020/05/07/rLaVFib42G3567A.png"></p>
+<blockquote>
+<p>图5-2 注册页面</p>
+</blockquote>
+<p>功能实现代码如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doPost</span><span class="params">(HttpServletRequest request, HttpServletResponse response)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">	HttpSession session=request.getSession();</span><br><span class="line">	User user=<span class="keyword">new</span> User();</span><br><span class="line">	String loginField=request.getParameter(<span class="string">"login-field"</span>);</span><br><span class="line">	String name=request.getParameter(<span class="string">"name"</span>);</span><br><span class="line">	String password=request.getParameter(<span class="string">"password"</span>);</span><br><span class="line">	String userType=request.getParameter(<span class="string">"user-type"</span>);</span><br><span class="line">	UserDao userDao=<span class="keyword">new</span> UserDaoImpl();</span><br><span class="line">	<span class="keyword">boolean</span> flag=<span class="keyword">false</span>;</span><br><span class="line">	<span class="keyword">if</span>(isEmail(loginField)) &#123;</span><br><span class="line">		flag=userDao.checkEmail(loginField);</span><br><span class="line">		user.setEmail(loginField);</span><br><span class="line">	&#125;<span class="keyword">else</span> <span class="keyword">if</span>(isPhoneNumber(loginField)) &#123;</span><br><span class="line">		flag=userDao.checkPhoneNumber(loginField);</span><br><span class="line">		user.setPhoneNumber(loginField);</span><br><span class="line">	&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">		<span class="keyword">this</span>.createToast(<span class="string">"请输入有效的邮箱或手机号"</span>, <span class="string">"danger"</span>, request, response);</span><br><span class="line">		<span class="keyword">this</span>.goToPage(<span class="string">"pages/common/register.jsp"</span>,request,response);</span><br><span class="line">		<span class="keyword">return</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	user.setName(name);</span><br><span class="line">	user.setPassword(password);</span><br><span class="line">	user.setUserType(userType);</span><br><span class="line">	<span class="keyword">if</span>(flag) &#123;</span><br><span class="line">		<span class="keyword">this</span>.createToast(<span class="string">"邮箱或手机号已注册，请重新输入"</span>, <span class="string">"danger"</span>, request, response);</span><br><span class="line">		<span class="keyword">this</span>.goToPage(<span class="string">"pages/common/register.jsp"</span>,request,response);</span><br><span class="line">	&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">		user=userDao.addUser(user);</span><br><span class="line">		<span class="keyword">if</span>(user.getUserType().equals(<span class="string">"admin"</span>)) &#123;</span><br><span class="line">			<span class="keyword">this</span>.createToast(<span class="string">"管理员用户注册成功，请联系管理员激活账号"</span>, <span class="string">"info"</span>, request, response);</span><br><span class="line">			<span class="keyword">this</span>.goToPage(<span class="string">"pages/common/login.jsp"</span>, request, response);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(user.getUserType().equals(<span class="string">"student"</span>)) &#123;</span><br><span class="line">			session.setAttribute(<span class="string">"currentUser"</span>,user);</span><br><span class="line">			<span class="keyword">this</span>.goToPage(<span class="string">"pages/student/addCurrentStudent.jsp"</span>, request, response);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(user.getUserType().equals(<span class="string">"company"</span>)) &#123;</span><br><span class="line">			session.setAttribute(<span class="string">"currentUser"</span>,user);</span><br><span class="line">			<span class="keyword">this</span>.goToPage(<span class="string">"pages/company/addCurrentCompany.jsp"</span>, request, response);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="5-3-管理员模块"><a href="#5-3-管理员模块" class="headerlink" title="5.3    管理员模块"></a>5.3    管理员模块</h3><h4 id="5-3-1-用户管理"><a href="#5-3-1-用户管理" class="headerlink" title="5.3.1    用户管理"></a>5.3.1    用户管理</h4><p>(1)    查看用户列表：课管理员可以查看所有用户，具有分页功能。如图5-3所示<br><img alt="function-image" class="post-img b-lazy" data-img="https://i.loli.net/2020/05/07/jxa8BOLtlAKMmSs.png" data-index="9" data-src="https://i.loli.net/2020/05/07/jxa8BOLtlAKMmSs.png"></p>
+<blockquote>
+<p>图5-3 系统功能图</p>
+</blockquote>
+<p>功能实现代码如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doPost</span><span class="params">(HttpServletRequest request, HttpServletResponse response)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">	String action=request.getParameter(<span class="string">"action"</span>);</span><br><span class="line">	UserDao ud=<span class="keyword">new</span> UserDaoImpl();</span><br><span class="line">	<span class="keyword">if</span>(action.equals(<span class="string">"viewUserList"</span>)) &#123;</span><br><span class="line">		Page page=<span class="keyword">new</span> Page();</span><br><span class="line">		String currentPageStr=request.getParameter(<span class="string">"page"</span>); </span><br><span class="line">		<span class="keyword">int</span> currentPage=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">if</span>(currentPageStr==<span class="keyword">null</span>) &#123;</span><br><span class="line">			currentPage=<span class="number">1</span>;</span><br><span class="line">		&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">			currentPage=Integer.parseInt(currentPageStr);</span><br><span class="line">		&#125;</span><br><span class="line">		page.setCurrentPage(currentPage);</span><br><span class="line">		String sql=request.getParameter(<span class="string">"verify"</span>);</span><br><span class="line">		Label label=<span class="keyword">new</span> Label();</span><br><span class="line">		label.setVerify(sql);</span><br><span class="line">		request.setAttribute(<span class="string">"label"</span>,label);</span><br><span class="line">		<span class="keyword">if</span>(sql==<span class="keyword">null</span>) &#123;</span><br><span class="line">			sql=<span class="string">""</span>;	</span><br><span class="line">		&#125;<span class="keyword">else</span> <span class="keyword">if</span>(sql.equals(<span class="string">"1"</span>)) &#123;</span><br><span class="line">			sql=<span class="string">" where verify='1'"</span>;</span><br><span class="line">		&#125;<span class="keyword">else</span> <span class="keyword">if</span>(sql.equals(<span class="string">"2"</span>)) &#123;</span><br><span class="line">			sql=<span class="string">" where verify='2'"</span>;</span><br><span class="line">		&#125;<span class="keyword">else</span> <span class="keyword">if</span>(sql.equals(<span class="string">"3"</span>)) &#123;</span><br><span class="line">			sql=<span class="string">" where verify='3'"</span>;</span><br><span class="line">		&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">			sql=<span class="string">""</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		page.setSql(sql);</span><br><span class="line">		page.setCurrentRecords(<span class="number">10</span>); </span><br><span class="line">		<span class="keyword">int</span> totalRecords=ud.getTotalRecords(page); </span><br><span class="line">		page.setTotalRecords(totalRecords); </span><br><span class="line">		page=ud.findCurrentPageRecords(page);</span><br><span class="line">		request.setAttribute(<span class="string">"userPage"</span>,page);</span><br><span class="line">		<span class="keyword">this</span>.goToPage(<span class="string">"pages/admin/viewUserList.jsp"</span>, request, response);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>(2)    审核：管理员可以通过标题审核标题栏，选择不同的状态来筛选用户，对用户进行审核。<br>功能实现代码如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doPost</span><span class="params">(HttpServletRequest request, HttpServletResponse response)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">	String action=request.getParameter(<span class="string">"action"</span>);</span><br><span class="line">	UserDao ud=<span class="keyword">new</span> UserDaoImpl();</span><br><span class="line">	<span class="keyword">if</span>(action.equals(<span class="string">"valid"</span>)) &#123;</span><br><span class="line">		<span class="keyword">int</span> id=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			id=Integer.parseInt(request.getParameter(<span class="string">"id"</span>));</span><br><span class="line">		&#125;<span class="keyword">catch</span> (NumberFormatException e) &#123;</span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125;</span><br><span class="line">			String currentPageStr=request.getParameter(<span class="string">"page"</span>); </span><br><span class="line">		String verify=request.getParameter(<span class="string">"verify"</span>); </span><br><span class="line">		<span class="keyword">boolean</span> flag=ud.valid(id);</span><br><span class="line">		<span class="keyword">if</span>(flag) &#123;</span><br><span class="line">			<span class="keyword">this</span>.createToast(<span class="string">"审核成功"</span>, <span class="string">"success"</span>, request, response);</span><br><span class="line">		&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">			<span class="keyword">this</span>.createToast(<span class="string">"审核失败"</span>, <span class="string">"success"</span>, request, response);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">this</span>.goToPage(<span class="string">"userManage?action=viewUserList&amp;page="</span>+currentPageStr+<span class="string">"&amp;verify="</span>+verify, request, response);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span>(action.equals(<span class="string">"invalid"</span>)) &#123;</span><br><span class="line">		<span class="keyword">int</span> id=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			id=Integer.parseInt(request.getParameter(<span class="string">"id"</span>));</span><br><span class="line">		&#125;<span class="keyword">catch</span> (NumberFormatException e) &#123;</span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125;</span><br><span class="line">		String currentPageStr=request.getParameter(<span class="string">"page"</span>); </span><br><span class="line">		String verify=request.getParameter(<span class="string">"verify"</span>); </span><br><span class="line">		<span class="keyword">boolean</span> flag=ud.invalid(id);</span><br><span class="line">		<span class="keyword">if</span>(flag) &#123;</span><br><span class="line">			<span class="keyword">this</span>.createToast(<span class="string">"审核成功"</span>, <span class="string">"success"</span>, request, response);</span><br><span class="line">		&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">			<span class="keyword">this</span>.createToast(<span class="string">"审核失败"</span>, <span class="string">"success"</span>, request, response);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">this</span>.goToPage(<span class="string">"userManage?action=viewUserList&amp;page="</span>+currentPageStr+<span class="string">"&amp;verify="</span>+verify, request, response);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>(3)    删除用户<br>功能实现代码如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doPost</span><span class="params">(HttpServletRequest request, HttpServletResponse response)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">	String action=request.getParameter(<span class="string">"action"</span>);</span><br><span class="line">	UserDao ud=<span class="keyword">new</span> UserDaoImpl();</span><br><span class="line"><span class="keyword">if</span>(action.equals(<span class="string">"deleteUser"</span>))&#123;</span><br><span class="line"><span class="keyword">int</span> id=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">	id=Integer.parseInt(request.getParameter(<span class="string">"id"</span>));</span><br><span class="line">&#125;<span class="keyword">catch</span> (NumberFormatException e) &#123;</span><br><span class="line">	e.printStackTrace();</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">boolean</span> flag=ud.deleteUser(id);</span><br><span class="line">	<span class="keyword">if</span>(flag) &#123;</span><br><span class="line">		<span class="keyword">this</span>.createToast(<span class="string">"删除成功"</span>, <span class="string">"success"</span>, request, response);</span><br><span class="line">	&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">		<span class="keyword">this</span>.createToast(<span class="string">"删除失败"</span>, <span class="string">"danger"</span>, request, response);</span><br><span class="line">	&#125;</span><br><span class="line">	String currentPageStr=request.getParameter(<span class="string">"page"</span>);</span><br><span class="line">	String verify=request.getParameter(<span class="string">"verify"</span>); </span><br><span class="line">	<span class="keyword">this</span>.goToPage(<span class="string">"userManage?action=viewUserList&amp;page="</span>+currentPageStr+<span class="string">"&amp;verify="</span>+verify, request, response);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h4 id="5-3-2-学生信息"><a href="#5-3-2-学生信息" class="headerlink" title="5.3.2    学生信息"></a>5.3.2    学生信息</h4><p>(1)    搜索学生信息：点击工具栏图标弹出搜索框，可以对学生的全部信息进行搜索，如图5-4<br><img alt="search-student-information" class="post-img b-lazy" data-img="https://i.loli.net/2020/05/07/dycLlxYunFhoJRC.png" data-index="10" data-src="https://i.loli.net/2020/05/07/dycLlxYunFhoJRC.png"></p>
+<blockquote>
+<p>图5-4搜索学生信息</p>
+</blockquote>
+<p>功能实现代码如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doPost</span><span class="params">(HttpServletRequest request, HttpServletResponse response)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">	HttpSession session=request.getSession();</span><br><span class="line">	String action=request.getParameter(<span class="string">"action"</span>);</span><br><span class="line">	StudentDao studentDao=<span class="keyword">new</span> StudentDaoImpl();<span class="keyword">if</span>(action.equals(<span class="string">"viewStudentList"</span>)) &#123;</span><br><span class="line">	String sql=request.getParameter(<span class="string">"sql"</span>);</span><br><span class="line">	String condition;</span><br><span class="line">	<span class="keyword">if</span>(request.getParameter(<span class="string">"condition"</span>)!=<span class="keyword">null</span>) &#123;</span><br><span class="line">		condition=<span class="string">" where concat(lower(user_name),lower(gender),lower(school),"</span> +				<span class="string">"lower(major)) like'%"</span>+request.getParameter(<span class="string">"condition"</span>).toLowerCase()+<span class="string">"%'"</span>;</span><br><span class="line">	&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">		condition=<span class="string">""</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	List&lt;Student&gt;studentList=studentDao.findStudentList(condition);</span><br><span class="line">	equest.setAttribute(<span class="string">"studentList"</span>, studentList);			<span class="keyword">this</span>.gotoPage(<span class="string">"pages/admin/viewStudentList.jsp?sql="</span>+sql, request, response);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="5-3-3-留言管理"><a href="#5-3-3-留言管理" class="headerlink" title="5.3.3    留言管理"></a>5.3.3    留言管理</h4><p>(2)    查看留言：可以查看学生和企业的留言<br>功能实现代码如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doPost</span><span class="params">(HttpServletRequest request, HttpServletResponse response)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">	HttpSession session=request.getSession();</span><br><span class="line">	String action=request.getParameter(<span class="string">"action"</span>);</span><br><span class="line">	MessageDao messageDao=<span class="keyword">new</span> MessageDaoImpl();</span><br><span class="line">	User user=(User) session.getAttribute(<span class="string">"currentUser"</span>);</span><br><span class="line"><span class="keyword">if</span>(action.equals(<span class="string">"viewMessageList"</span>)) &#123;</span><br><span class="line">		List&lt;Message&gt; messageList=messageDao.findMessageListOrderByMessageTime();</span><br><span class="line">		request.setAttribute(<span class="string">"messageList"</span>, messageList);</span><br><span class="line">		<span class="keyword">if</span>(user.getUserType().equals(<span class="string">"admin"</span>)) &#123;</span><br><span class="line">			<span class="keyword">this</span>.gotoPage(<span class="string">"pages/admin/viewMessageList.jsp"</span>,request,response);</span><br><span class="line">		&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">			<span class="keyword">this</span>.gotoPage(<span class="string">"pages/common/viewMessageList.jsp"</span>,request,response);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>(3)    留言回复：管理员可以对学生和企业的留言进行回复，如图5-5<br><img alt="leave-a-feedback" class="post-img b-lazy" data-img="https://i.loli.net/2020/05/07/bByqnhxiOWFsR4w.png" data-index="11" data-src="https://i.loli.net/2020/05/07/bByqnhxiOWFsR4w.png"></p>
+<blockquote>
+<p>图5-5留言回复</p>
+</blockquote>
+<p>功能实现代码如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doPost</span><span class="params">(HttpServletRequest request, HttpServletResponse response)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">	HttpSession session=request.getSession();</span><br><span class="line">	String action=request.getParameter(<span class="string">"action"</span>);</span><br><span class="line">	MessageDao messageDao=<span class="keyword">new</span> MessageDaoImpl();</span><br><span class="line">	User user=(User) session.getAttribute(<span class="string">"currentUser"</span>);</span><br><span class="line"><span class="keyword">if</span>(action.equals(<span class="string">"update"</span>)) &#123;</span><br><span class="line">String mid=request.getParameter(<span class="string">"id"</span>);</span><br><span class="line">			<span class="keyword">int</span> id=Integer.parseInt(mid);</span><br><span class="line">System.out.println(id);</span><br><span class="line">	String reply=request.getParameter(<span class="string">"reply"</span>);</span><br><span class="line">	Date date=<span class="keyword">new</span> Date();</span><br><span class="line">	DateFormat dateFormat=DateFormat.getDateTimeInstance();</span><br><span class="line">	String replyTime=dateFormat.format(date);</span><br><span class="line">	Message message=<span class="keyword">new</span> Message();</span><br><span class="line">	message.setId(id);</span><br><span class="line">	message.setReply(reply);</span><br><span class="line">	message.setReplyTime(replyTime);</span><br><span class="line">	<span class="keyword">boolean</span> flag=messageDao.updateMessageReply(message);</span><br><span class="line">	<span class="keyword">if</span>(flag) &#123;</span><br><span class="line">		<span class="keyword">this</span>.createToast(<span class="string">"回复成功"</span>, <span class="string">"success"</span>, request, response);</span><br><span class="line">		<span class="keyword">this</span>.gotoPage(<span class="string">"messageManage?action=viewMessageList"</span>,request,response);</span><br><span class="line">	&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">		<span class="keyword">this</span>.createToast(<span class="string">"回复失败"</span>, <span class="string">"danger"</span>, request, response);</span><br><span class="line">		<span class="keyword">this</span>.gotoPage(<span class="string">"messageManage?action=viewMessageList"</span>,request,response);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>5.4    学生模块<br>5.4.1    简历管理<br>(1)    添加简历：如图5-6<br><img alt="add-resume" class="post-img b-lazy" data-img="https://i.loli.net/2020/05/07/agEjVHuwdoCMQ1f.png" data-index="12" data-src="https://i.loli.net/2020/05/07/agEjVHuwdoCMQ1f.png"></p>
+<blockquote>
+<p>图5-6添加简历</p>
+</blockquote>
+<p>功能实现代码如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doPost</span><span class="params">(HttpServletRequest request, HttpServletResponse response)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">	String action=request.getParameter(<span class="string">"action"</span>);</span><br><span class="line">	ResumeDao resumeDao=<span class="keyword">new</span> ResumeDaoImpl();</span><br><span class="line">	HttpSession session=request.getSession();</span><br><span class="line">	User user=(User) session.getAttribute(<span class="string">"currentUser"</span>);</span><br><span class="line"><span class="keyword">if</span>(action.equals(<span class="string">"addResume"</span>)) &#123;</span><br><span class="line">		<span class="keyword">int</span> studentId=user.getId();;</span><br><span class="line">		String studentName=user.getName();</span><br><span class="line">		String gender=request.getParameter(<span class="string">"gender"</span>);</span><br><span class="line">		String birthdate=request.getParameter(<span class="string">"birthdate"</span>);</span><br><span class="line">		String nation=request.getParameter(<span class="string">"nation"</span>);</span><br><span class="line">		String politics=request.getParameter(<span class="string">"politics"</span>);</span><br><span class="line">		String graduation=request.getParameter(<span class="string">"school"</span>);</span><br><span class="line">		String school=request.getParameter(<span class="string">"school"</span>);</span><br><span class="line">		String major=request.getParameter(<span class="string">"major"</span>);</span><br><span class="line">		String education=request.getParameter(<span class="string">"education"</span>);</span><br><span class="line">		String email=request.getParameter(<span class="string">"email"</span>);</span><br><span class="line">		String phoneNumber=request.getParameter(<span class="string">"phone-number"</span>);</span><br><span class="line">		String foreignLanguage=request.getParameter(<span class="string">"foreign-language"</span>);</span><br><span class="line">		String hobby=request.getParameter(<span class="string">"hobby"</span>);</span><br><span class="line">		String practice=request.getParameter(<span class="string">"practice"</span>);</span><br><span class="line">		String position=request.getParameter(<span class="string">"position"</span>);</span><br><span class="line">		String honor=request.getParameter(<span class="string">"honor"</span>);</span><br><span class="line">		String research=request.getParameter(<span class="string">"research"</span>);</span><br><span class="line">		String selfEvaluation=request.getParameter(<span class="string">"self-evaluation"</span>);</span><br><span class="line">		Resume resume=<span class="keyword">new</span> Resume();</span><br><span class="line">		resume.setUserId(studentId);</span><br><span class="line">		resume.setUserName(studentName);</span><br><span class="line">		resume.setGender(gender);</span><br><span class="line">			resume.setBirthdate(birthdate);</span><br><span class="line">			resume.setNation(nation);</span><br><span class="line">			resume.setPolitics(politics);</span><br><span class="line">			resume.setGraduation(graduation);</span><br><span class="line">			resume.setSchool(school);</span><br><span class="line">			resume.setMajor(major);</span><br><span class="line">			resume.setEducation(education);</span><br><span class="line">			resume.setEmail(email);</span><br><span class="line">			resume.setPhoneNumber(phoneNumber);</span><br><span class="line">			resume.setForeignLanguage(foreignLanguage);</span><br><span class="line">		resume.setHobby(hobby);</span><br><span class="line">		resume.setPractice(practice);</span><br><span class="line">			resume.setPosition(position);</span><br><span class="line">			resume.setHonor(honor);</span><br><span class="line">			resume.setResearch(research);</span><br><span class="line">			resume.setSelfEvaluation(selfEvaluation);</span><br><span class="line">			<span class="keyword">boolean</span> flag=resumeDao.addResume(resume);</span><br><span class="line">			<span class="keyword">if</span>(flag) &#123;</span><br><span class="line">				session.setAttribute(<span class="string">"resume"</span>, resume);</span><br><span class="line">			<span class="keyword">this</span>.createToast(<span class="string">"添加简历成功"</span>, <span class="string">"success"</span>, request, response);			</span><br><span class="line">		&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">			<span class="keyword">this</span>.createToast(<span class="string">"添加简历失败"</span>, <span class="string">"danger"</span>, request, response);		</span><br><span class="line">		&#125;</span><br><span class="line">			<span class="keyword">this</span>.gotoPage(<span class="string">"resumeManage?action=viewCurrentStudentResumeList"</span>,request,response);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>(2)    修改简历：如图5-7<br><img alt="edit-resume" class="post-img b-lazy" data-img="https://i.loli.net/2020/05/07/ihBAX58yCUIGzWP.png" data-index="13" data-src="https://i.loli.net/2020/05/07/ihBAX58yCUIGzWP.png"></p>
+<blockquote>
+<p>图5-7 修改简历</p>
+</blockquote>
+<p>功能实现代码如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doPost</span><span class="params">(HttpServletRequest request, HttpServletResponse response)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">	String action=request.getParameter(<span class="string">"action"</span>);</span><br><span class="line">	ResumeDao resumeDao=<span class="keyword">new</span> ResumeDaoImpl();</span><br><span class="line">	HttpSession session=request.getSession();</span><br><span class="line">	User user=(User) session.getAttribute(<span class="string">"currentUser"</span>);</span><br><span class="line"><span class="keyword">if</span>(action.equals(<span class="string">"modifyRecruit"</span>)) &#123;</span><br><span class="line">		String rid=request.getParameter(<span class="string">"id"</span>);</span><br><span class="line">		<span class="keyword">int</span> id=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			id=Integer.parseInt(rid);</span><br><span class="line">		&#125;<span class="keyword">catch</span> (NumberFormatException e) &#123;</span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125;</span><br><span class="line">		String uid=request.getParameter(<span class="string">"user-id"</span>);</span><br><span class="line">		<span class="keyword">int</span> userId=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			userId=Integer.parseInt(uid);</span><br><span class="line">		&#125;<span class="keyword">catch</span> (NumberFormatException e) &#123;</span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125;</span><br><span class="line">		String userName=request.getParameter(<span class="string">"user-name"</span>);</span><br><span class="line">		String companyAddress=request.getParameter(<span class="string">"company-address"</span>);</span><br><span class="line">		String position=request.getParameter(<span class="string">"position"</span>);</span><br><span class="line">		String positionType=request.getParameter(<span class="string">"position-type"</span>);</span><br><span class="line">		String eduRequire=request.getParameter(<span class="string">"edu-require"</span>);</span><br><span class="line">		String experience=request.getParameter(<span class="string">"experience"</span>);</span><br><span class="line">		String num=request.getParameter(<span class="string">"recruitment"</span>);</span><br><span class="line">		<span class="keyword">int</span> recruitment=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			recruitment=Integer.parseInt(num);</span><br><span class="line">		&#125;<span class="keyword">catch</span> (NumberFormatException e) &#123;</span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125;</span><br><span class="line">		String workPlace=request.getParameter(<span class="string">"work-place"</span>);</span><br><span class="line">		String branch=request.getParameter(<span class="string">"branch"</span>);</span><br><span class="line">		String description=request.getParameter(<span class="string">"description"</span>);</span><br><span class="line">		String postcode=request.getParameter(<span class="string">"postcode"</span>);</span><br><span class="line">		String phoneNumber=request.getParameter(<span class="string">"phone-number"</span>);</span><br><span class="line">		String linkman=request.getParameter(<span class="string">"linkman"</span>);</span><br><span class="line">		String email=request.getParameter(<span class="string">"email"</span>);</span><br><span class="line">		String website=request.getParameter(<span class="string">"website"</span>);</span><br><span class="line">		Recruit recruit=<span class="keyword">new</span> Recruit();</span><br><span class="line">		recruit.setId(id);</span><br><span class="line">		recruit.setUserId(userId);</span><br><span class="line">		recruit.setUserName(userName);</span><br><span class="line">		recruit.setCompanyAddress(companyAddress);</span><br><span class="line">		recruit.setPosition(position);</span><br><span class="line">		recruit.setPositionType(positionType);</span><br><span class="line">		recruit.setEduRequire(eduRequire);</span><br><span class="line">		recruit.setExperience(experience);</span><br><span class="line">		recruit.setRecruitment(recruitment);</span><br><span class="line">		recruit.setWorkPlace(workPlace);</span><br><span class="line">		recruit.setBranch(branch);</span><br><span class="line">		recruit.setDescription(description);</span><br><span class="line">		recruit.setPostcode(postcode);</span><br><span class="line">		recruit.setPhoneNumber(phoneNumber);</span><br><span class="line">		recruit.setLinkman(linkman);</span><br><span class="line">		recruit.setEmail(email);</span><br><span class="line">		recruit.setWebsite(website);</span><br><span class="line">		<span class="keyword">boolean</span> flag=recruitDao.updateRecruit(recruit);</span><br><span class="line">		<span class="keyword">if</span>(flag) &#123;</span><br><span class="line">			<span class="keyword">this</span>.createToast(<span class="string">"修改成功"</span>, <span class="string">"success"</span>, request, response);</span><br><span class="line">		&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">			<span class="keyword">this</span>.createToast(<span class="string">"修改失败"</span>, <span class="string">"danger"</span>, request, response);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">this</span>.gotoPage(<span class="string">"recruitManage?action=viewAndModifyRecruit&amp;id"</span>+id,request,response);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>5.4.2    招聘信息<br>(1)    挑选简历：点击“投简历”进入挑选简历页面，如图5-8<br><img alt="pick-resume" class="post-img b-lazy" data-img="https://i.loli.net/2020/05/07/bosOnFE9Wrt3Qpd.png" data-index="14" data-src="https://i.loli.net/2020/05/07/bosOnFE9Wrt3Qpd.png"></p>
+<blockquote>
+<p>图5-8 挑选简历</p>
+</blockquote>
+<p>代码实现如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doPost</span><span class="params">(HttpServletRequest request, HttpServletResponse response)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">	String action=request.getParameter(<span class="string">"action"</span>);</span><br><span class="line">	ResumeDao resumeDao=<span class="keyword">new</span> ResumeDaoImpl();</span><br><span class="line">	HttpSession session=request.getSession();</span><br><span class="line">	User user=(User) session.getAttribute(<span class="string">"currentUser"</span>);</span><br><span class="line"><span class="keyword">if</span>(action.equals(<span class="string">"viewSelectResumeList"</span>))&#123;</span><br><span class="line"><span class="keyword">int</span> userId=user.getId();</span><br><span class="line">String rid=request.getParameter(<span class="string">"recruit-id"</span>);</span><br><span class="line"><span class="keyword">int</span> recruitId=Integer.parseInt(rid);</span><br><span class="line">String cid=request.getParameter(<span class="string">"recruit-user-id"</span>);</span><br><span class="line"><span class="keyword">int</span> recruitUserId=Integer.parseInt(cid);</span><br><span class="line">String recruitUserName=request.getParameter(<span class="string">"recruit-user-name"</span>);</span><br><span class="line">String position=request.getParameter(<span class="string">"position"</span>);</span><br><span class="line">Employment employment=<span class="keyword">new</span> Employment();</span><br><span class="line">employment.setRecruitId(recruitId);</span><br><span class="line">employment.setRecruitUserId(recruitUserId);</span><br><span class="line">employment.setRecruitUserName(recruitUserName);</span><br><span class="line">employment.setPosition(position);</span><br><span class="line">session.setAttribute(<span class="string">"employment"</span>, employment);</span><br><span class="line">List&lt;Resume&gt; resumeList=resumeDao.findResumeListByUserId(userId);</span><br><span class="line">request.setAttribute(<span class="string">"resumeList"</span>, resumeList);</span><br><span class="line"><span class="keyword">this</span>.createToast(<span class="string">"请挑选简历"</span>, <span class="string">"info"</span>, request, response);	</span><br><span class="line"><span class="keyword">this</span>.gotoPage(<span class="string">"pages/student/viewSelectResumeList.jsp"</span>,request,response);	</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>(2)    投简历：在挑选简历页面，在选好的简历行上点击“选择”投简历，如上图5-8<br>代码实现如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doPost</span><span class="params">(HttpServletRequest request, HttpServletResponse response)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">	String action=request.getParameter(<span class="string">"action"</span>);</span><br><span class="line">	EmploymentDao employmentDao=<span class="keyword">new</span> EmploymentDaoImpl();</span><br><span class="line">	HttpSession session=request.getSession();</span><br><span class="line">	User user=(User) session.getAttribute(<span class="string">"currentUser"</span>); </span><br><span class="line">		<span class="keyword">if</span>(action.equals(<span class="string">"createEmployment"</span>)) &#123;</span><br><span class="line">			String rid=request.getParameter(<span class="string">"resume-id"</span>);</span><br><span class="line">			<span class="keyword">int</span> resumeId=Integer.parseInt(rid);</span><br><span class="line">			String sid=request.getParameter(<span class="string">"resume-user-id"</span>);</span><br><span class="line">			<span class="keyword">int</span> resumeUserId=Integer.parseInt(sid);</span><br><span class="line">			String resumeUserName=request.getParameter(<span class="string">"resume-user-name"</span>);</span><br><span class="line">			String s=request.getParameter(<span class="string">"status"</span>);</span><br><span class="line">			<span class="keyword">int</span> status=Integer.parseInt(s);</span><br><span class="line">			Employment employment=(Employment) session.getAttribute(<span class="string">"employment"</span>);</span><br><span class="line">			employment.setResumeId(resumeId);</span><br><span class="line">			employment.setResumeUserId(resumeUserId);</span><br><span class="line">			employment.setResumeUserName(resumeUserName);</span><br><span class="line">			employment.setStatus(status);</span><br><span class="line">			<span class="keyword">boolean</span> flag=employmentDao.addEmployment(employment);</span><br><span class="line">			<span class="keyword">if</span>(flag) &#123;</span><br><span class="line">				<span class="keyword">this</span>.createToast(<span class="string">"投递简历成功"</span>, <span class="string">"success"</span>, request, response);			</span><br><span class="line">			&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">				<span class="keyword">this</span>.createToast(<span class="string">"投递简历失败"</span>, <span class="string">"danger"</span>, request, response);		</span><br><span class="line">			&#125;</span><br><span class="line">				<span class="keyword">this</span>.gotoPage(<span class="string">"recruitManage?action=viewRecruitList"</span>,request,response);</span><br><span class="line">		&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="5-4-3-就业信息"><a href="#5-4-3-就业信息" class="headerlink" title="5.4.3    就业信息"></a>5.4.3    就业信息</h4><p>(1)    取消应聘：已经投递简历之后，可以在就业信息页面查看自己的应聘情况，如果不想应聘可以点击“取消应聘”，如下图5-9<br><img alt="cancel-an-application" class="post-img b-lazy" data-img="https://i.loli.net/2020/05/07/VDLWKMhOq1vjFJR.png" data-index="15" data-src="https://i.loli.net/2020/05/07/VDLWKMhOq1vjFJR.png"></p>
+<blockquote>
+<p>图5-9 取消应聘</p>
+</blockquote>
+<p>代码实现如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doPost</span><span class="params">(HttpServletRequest request, HttpServletResponse response)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">	String action=request.getParameter(<span class="string">"action"</span>);</span><br><span class="line">	EmploymentDao employmentDao=<span class="keyword">new</span> EmploymentDaoImpl();</span><br><span class="line">	HttpSession session=request.getSession();</span><br><span class="line">	User user=(User) session.getAttribute(<span class="string">"currentUser"</span>); </span><br><span class="line"><span class="keyword">if</span>(action.equals(<span class="string">"cancelApplication"</span>)) &#123;</span><br><span class="line">	String eid=request.getParameter(<span class="string">"id"</span>);</span><br><span class="line">	<span class="keyword">int</span> id=Integer.parseInt(eid);</span><br><span class="line">	<span class="keyword">boolean</span> flag=employmentDao.deleteEmploymentById(id);</span><br><span class="line">	<span class="keyword">if</span>(flag) &#123;</span><br><span class="line">		<span class="keyword">this</span>.createToast(<span class="string">"取消应聘成功"</span>, <span class="string">"success"</span>, request, response);			</span><br><span class="line">&#125;<span class="keyword">else</span> &#123;</span><br><span class="line"><span class="keyword">this</span>.createToast(<span class="string">"取消应聘失败"</span>, <span class="string">"danger"</span>, request, response);		</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">this</span>.gotoPage(<span class="string">"employmentManage?action=viewCurrentStudentEmploymentList"</span>,request,response);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>5.4.4    留言<br>(1)    添加留言：输入标题和内容，设置内容样式，点击发送给管理员留言，如图5-10<br><img alt="leave-a-message" class="post-img b-lazy" data-img="https://i.loli.net/2020/05/07/4Z69fVdzeCx2X8R.png" data-index="16" data-src="https://i.loli.net/2020/05/07/4Z69fVdzeCx2X8R.png"></p>
+<blockquote>
+<p>图5-10 留言</p>
+</blockquote>
+<p>代码实现如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doPost</span><span class="params">(HttpServletRequest request, HttpServletResponse response)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">	HttpSession session=request.getSession();</span><br><span class="line">	String action=request.getParameter(<span class="string">"action"</span>);</span><br><span class="line">	MessageDao messageDao=<span class="keyword">new</span> MessageDaoImpl();</span><br><span class="line">	User user=(User) session.getAttribute(<span class="string">"currentUser"</span>);</span><br><span class="line">	<span class="keyword">if</span>(action.equals(<span class="string">"add"</span>)) &#123;</span><br><span class="line">		<span class="keyword">int</span> id=user.getId();</span><br><span class="line">		System.out.println(id);</span><br><span class="line">		String userName=user.getName();</span><br><span class="line">		String title=request.getParameter(<span class="string">"title"</span>);</span><br><span class="line">		String content=request.getParameter(<span class="string">"content"</span>);</span><br><span class="line">		Date date=<span class="keyword">new</span> Date();</span><br><span class="line">		DateFormat dateFormat=DateFormat.getDateTimeInstance();</span><br><span class="line">		String messageTime=dateFormat.format(date);</span><br><span class="line">		Message message=<span class="keyword">new</span> Message();</span><br><span class="line">		message.setUserId(id);</span><br><span class="line">		message.setUserName(userName);</span><br><span class="line">		message.setTitle(title);</span><br><span class="line">		message.setContent(content);</span><br><span class="line">		message.setMessageTime(messageTime);</span><br><span class="line">		<span class="keyword">boolean</span> flag=messageDao.addMessage(message);</span><br><span class="line">		<span class="keyword">if</span>(flag) &#123;</span><br><span class="line">			<span class="keyword">this</span>.createToast(<span class="string">"留言成功"</span>, <span class="string">"success"</span>, request, response);</span><br><span class="line">			<span class="keyword">this</span>.gotoPage(<span class="string">"messageManage?action=viewMessageList"</span>,request,response);</span><br><span class="line">		&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">			<span class="keyword">this</span>.createToast(<span class="string">"留言失败"</span>, <span class="string">"danger"</span>, request, response);</span><br><span class="line">			<span class="keyword">this</span>.gotoPage(<span class="string">"messageManage?action=viewMessageList"</span>,request,response);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>5.5    企业模块<br>5.5.1    就业信息<br>(1)    招聘：学生投递简历之后，对应的公司可以查看简历的投递情况，并选择通过还是不通过招聘，如图5-11<br><img alt="recruit" class="post-img b-lazy" data-img="https://i.loli.net/2020/05/07/daFeynPgj6fHpEl.png" data-index="17" data-src="https://i.loli.net/2020/05/07/daFeynPgj6fHpEl.png"></p>
+<blockquote>
+<p>图5-11 后台审核填写流程图</p>
+</blockquote>
+<p>代码实现如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doPost</span><span class="params">(HttpServletRequest request, HttpServletResponse response)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">	String action=request.getParameter(<span class="string">"action"</span>);</span><br><span class="line">	EmploymentDao employmentDao=<span class="keyword">new</span> EmploymentDaoImpl();</span><br><span class="line">	HttpSession session=request.getSession();</span><br><span class="line">	User user=(User) session.getAttribute(<span class="string">"currentUser"</span>); </span><br><span class="line"><span class="keyword">if</span>(action.equals(<span class="string">"passApplication"</span>)) &#123;</span><br><span class="line">			String eid=request.getParameter(<span class="string">"id"</span>);</span><br><span class="line">			<span class="keyword">int</span> id=Integer.parseInt(eid);</span><br><span class="line">			<span class="keyword">boolean</span> flag=employmentDao.pass(id);</span><br><span class="line">			<span class="keyword">if</span>(flag) &#123;</span><br><span class="line">				<span class="keyword">this</span>.createToast(<span class="string">"审核成功"</span>, <span class="string">"success"</span>, request, response);			</span><br><span class="line">			&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">				<span class="keyword">this</span>.createToast(<span class="string">"审核失败"</span>, <span class="string">"danger"</span>, request, response);		</span><br><span class="line">			&#125;																						<span class="keyword">this</span>.gotoPage(<span class="string">"employmentManage?action=viewCurrentCompanyEmploymentList"</span>,request,response);</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line"><span class="keyword">if</span>(action.equals(<span class="string">"failApplication"</span>)) &#123;</span><br><span class="line">String eid=request.getParameter(<span class="string">"id"</span>);</span><br><span class="line"><span class="keyword">int</span> id=Integer.parseInt(eid);</span><br><span class="line"><span class="keyword">boolean</span> flag=employmentDao.fail(id);</span><br><span class="line"><span class="keyword">if</span>(flag) &#123;</span><br><span class="line"><span class="keyword">this</span>.createToast(<span class="string">"审核成功"</span>, <span class="string">"success"</span>, request, response);	</span><br><span class="line">&#125;<span class="keyword">else</span> &#123;</span><br><span class="line"><span class="keyword">this</span>.createToast(<span class="string">"审核失败"</span>, <span class="string">"danger"</span>, request, response);	</span><br><span class="line">&#125;	<span class="keyword">this</span>.gotoPage(<span class="string">"employmentManage?action=viewCurrentCompanyEmploymentList"</span>,request,response);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="6-运行环境"><a href="#6-运行环境" class="headerlink" title="6    运行环境"></a>6    运行环境</h2><h3 id="6-1-硬件环境"><a href="#6-1-硬件环境" class="headerlink" title="6.1    硬件环境"></a>6.1    硬件环境</h3><p>(1)    CPU：2.3 GHz Quad-Core Intel Core i5。<br>(2)    磁盘空间：512GB。<br>(3)    内存：16GB。<br>(4)    其他：鼠标、键盘。</p>
+<h3 id="6-2-软件环境"><a href="#6-2-软件环境" class="headerlink" title="6.2    软件环境"></a>6.2    软件环境</h3><p>(1)    操作系统：Mac OS Catalina 10.15.1。<br>(2)    数据库：Mysql数据库。<br>(3)    服务器：Apache Tomcat/9.0.14。<br>(4)    开发工具：Eclipse、MySQL、Navicat Premium、HBuilderX、Chrome。<br>(5)    辅助开发工具：Adobe Illustrator CC 、Adobe Photoshop CC、Adobe Dreamweaver CC。</p>
+<h2 id="7-使用说明"><a href="#7-使用说明" class="headerlink" title="7    使用说明"></a>7    使用说明</h2><h3 id="7-1-管理员"><a href="#7-1-管理员" class="headerlink" title="7.1    管理员"></a>7.1    管理员</h3><h4 id="7-1-1-审核用户用例说明："><a href="#7-1-1-审核用户用例说明：" class="headerlink" title="7.1.1    审核用户用例说明："></a>7.1.1    审核用户用例说明：</h4><p>用例账号：<a href="mailto:admin@qq.com">admin@qq.com</a><br>用例密码：wxh<br>用例名称：登录后台管理系统审核用户<br>参与者：管理员<br>前置条件：是本学校的管理员。<br>后置条件：账号（邮箱或手机号）和密码输入正确。<br>基本事件流：</p>
+<ol>
+<li>打开系统登录页面；</li>
+<li>输入账号（邮箱或手机号）和密码</li>
+<li>进入系统；</li>
+<li>点击侧边栏的“用户管理”进入用户管理页面；</li>
+<li>点击标题栏中的“审核”，弹出选择框；</li>
+<li>点击未审核，筛选未审核的用户；<br>7．选择需要审核的用户，点击通过，完成审核</li>
+</ol>
+<h4 id="7-1-2-修改密码用例说明："><a href="#7-1-2-修改密码用例说明：" class="headerlink" title="7.1.2    修改密码用例说明："></a>7.1.2    修改密码用例说明：</h4><p>用例账号：<a href="mailto:admin@qq.com">admin@qq.com</a>;<br>用例密码：wxh；<br>用例名称：修改密码<br>参与者：学生；<br>前置条件：成功登录进入系统。<br>后置条件：</p>
+<ol>
+<li>先输入旧密码；</li>
+<li>后输入的新密码要一致。<br>基本事件流：</li>
+<li>打开系统登录页面；</li>
+<li>输入账号（邮箱或手机号）和密码；</li>
+<li>进入系统；</li>
+<li>点击右上角头像，弹出菜单；</li>
+<li>点击修改密码，进入修改密码页面；</li>
+<li>输入旧密码和新密码；</li>
+<li>点击修改，修改成功。</li>
+<li>1.3    回复留言用例说明：<br>用例账号：<a href="mailto:pineapple@pineapple.com">pineapple@pineapple.com</a>；<br>用例密码：pineapple；<br>用例名称：回复留言；<br>参与者：管理员<br>前置条件：是本学校的管理员，具有管理权限。<br>后置条件：账号（邮箱或手机号）和密码输入正确。<br>基本事件流：</li>
+<li>打开系统登录页面；</li>
+<li>输入账号（邮箱或手机号）和密码；</li>
+<li>进入系统；</li>
+<li>点击侧边栏的“留言管理”查看留言信息。</li>
+<li>选择选择需要回复的留言，并点击进入回复页面。</li>
+<li>输入回复内容；</li>
+<li>点击发送，回复成功。</li>
+</ol>
+<h3 id="7-2-学生"><a href="#7-2-学生" class="headerlink" title="7.2    学生"></a>7.2    学生</h3><h4 id="7-2-1-登录用例说明"><a href="#7-2-1-登录用例说明" class="headerlink" title="7.2.1    登录用例说明"></a>7.2.1    登录用例说明</h4><p>用例账号：<a href="mailto:swk@qq.com">swk@qq.com</a>;<br>用例密码：swk<br>用例名称：登录系统<br>参与者：学生；<br>前置条件：是本学校的学生。<br>后置条件：账号（邮箱或手机号）和密码输入正确。<br>基本事件流：</p>
+<ol>
+<li>打开系统登录页面；</li>
+<li>输入学生账户绑定的邮箱或手机号和密码；</li>
+<li>进入系统。<br>异常事件流：账号（邮箱或手机号）或密码输入错误的时候无法进入系统。</li>
+</ol>
+<h4 id="7-2-2-投递简历用例说明"><a href="#7-2-2-投递简历用例说明" class="headerlink" title="7.2.2    投递简历用例说明"></a>7.2.2    投递简历用例说明</h4><p>用例账号：<a href="mailto:swk@qq.com">swk@qq.com</a>;<br>用例密码：swk<br>用例名称：投递简历<br>参与者：学生；<br>前置条件：是本学校的学生。<br>后置条件：账号（邮箱或手机号）和密码输入正确，成功进入本系统。<br>基本事件流：</p>
+<ol>
+<li>打开系统登录页面；</li>
+<li>输入账号（邮箱或手机号）和密码;</li>
+<li>进入系统；</li>
+<li>点击侧边栏的“招聘信息”，打开招聘信息页面。</li>
+<li>选择想要投递的公司并按下“投简历”按钮，进入选择简历页面。</li>
+<li>选择要投递的简历，并按下选择按钮。</li>
+<li>简历投递成功。</li>
+</ol>
+<h4 id="7-2-3-取消应聘用例说明"><a href="#7-2-3-取消应聘用例说明" class="headerlink" title="7.2.3    取消应聘用例说明"></a>7.2.3    取消应聘用例说明</h4><p>用例账号：<a href="mailto:swk@qq.com">swk@qq.com</a><br>用例密码：swk<br>用例名称：投递简历<br>参与者：学生；<br>前置条件：在招聘信息页面进了简历投递。<br>后置条件：账号（邮箱或手机号）和密码输入正确，成功进入本系统。<br>基本事件流：</p>
+<ol>
+<li>打开系统登录页面；</li>
+<li>输入账号（邮箱或手机号）和密码</li>
+<li>进入系统；</li>
+<li>点击侧边栏的“就业信息”，查看就业信息。</li>
+<li>选择要取消应聘的就业信息，点击取消应聘</li>
+<li>取消应聘成功<h4 id="7-2-4-留言用例说明"><a href="#7-2-4-留言用例说明" class="headerlink" title="7.2.4    留言用例说明"></a>7.2.4    留言用例说明</h4>用例账号：<a href="mailto:swk@qq.com">swk@qq.com</a>;<br>用例密码：swk;<br>用例名称：留言<br>参与者：学生；<br>基本事件流：</li>
+<li>打开系统登录页面；</li>
+<li>输入账号（邮箱或手机号）和密码;</li>
+<li>进入系统；</li>
+<li>点击侧边栏的“留言”，查看留言内容；</li>
+<li>页面拉到最后；</li>
+<li>输入留言标题和留言内容；</li>
+<li>点击提交，留言成功。</li>
+</ol>
+<h2 id="7-3-企业"><a href="#7-3-企业" class="headerlink" title="7.3    企业"></a>7.3    企业</h2><h4 id="7-3-1-添加招聘信息用例说明"><a href="#7-3-1-添加招聘信息用例说明" class="headerlink" title="7.3.1    添加招聘信息用例说明"></a>7.3.1    添加招聘信息用例说明</h4><p>用例账号：<a href="mailto:pineapple@pineapple.com">pineapple@pineapple.com</a><br>用例密码：pineapple<br>用例名称：登录后台管理系统<br>参与者：企业员工<br>前置条件：是本学校的教务处员工。<br>后置条件： 账号（邮箱或手机号）和密码输入正确。<br>基本事件流：</p>
+<ol>
+<li>打开系统登录页面；</li>
+<li>输入账号（邮箱或手机号）和密码；</li>
+<li>进入系统；</li>
+<li>点击侧边栏的“招聘信息”进入招聘信息页面；</li>
+<li>点击工具栏中的加号进入添加招聘信息页面；</li>
+<li>输入招聘信息</li>
+</ol>
+<h2 id="7．点击添加，添加成功。"><a href="#7．点击添加，添加成功。" class="headerlink" title="7．点击添加，添加成功。"></a>7．点击添加，添加成功。</h2><h4 id="7-3-2-招聘用例说明"><a href="#7-3-2-招聘用例说明" class="headerlink" title="7.3.2    招聘用例说明"></a>7.3.2    招聘用例说明</h4><p>用例账号：<a href="mailto:pineapple@pineapple.com">pineapple@pineapple.com</a><br>用例密码：pineapple<br>用例名称：招聘学生<br>参与者：企业员工<br>前置条件：是企业员工。<br>后置条件：有学生向本公司投了简历。<br>基本事件流：</p>
+<ol>
+<li>打开系统登录页面；</li>
+<li>输入账号（邮箱或手机号）和密码；</li>
+<li>进入系统；</li>
+<li>点击侧边栏的“就业信息”查看就业信息。</li>
+<li>选择学生，点击招聘栏目下的通过，应聘该学生。</li>
+</ol>
+<h2 id="8-结束语"><a href="#8-结束语" class="headerlink" title="8    结束语"></a>8    结束语</h2><p>经过以上详细的设计与架构，终于完成了毕业选题系统的开发。我主张软件产品不仅功能要完善，而且界面要好看，因为这些高要求，这个作品花了我大量时间。受Apple设计的启发，该软件采用先设计后工程的顺序完成，也就是先设计软件界面，再实现软件功能的模式。<br>该软件不仅界面和功能花了我大量功夫，而且在代码规范方面也花了不少心思。经过查阅大量相关资料，采用了比较规范的数据库命名方式，比如本系统的HTML标签的name属性采用统一的命名方式，统一采用小写，统一采用“-”（减号）作为单词的分隔符号，比如<code>&lt;input name=”email”/&gt;</code>。再比如数据库里的内容，命名一律采用小写英文，多个词的名称用“_”(下划线)分隔，外键用数据表名加列名的形式命名等等。登录采用邮箱和手机号登录和注册，方便用户记住账号。<br>这次毕业设计的制作，提高了我对知识的整合能力，提高了我们的实战能力，是一个很好的锻炼机会。也让我明白了自己所学的知识在真实的生产环境中，还远远不够，还需要不断学习，提高自己的能力。</p>
+<h2 id="9-参考文献"><a href="#9-参考文献" class="headerlink" title="9    参考文献"></a>9    参考文献</h2><p><a href="http://product.dangdang.com/23712464.html" target="_blank" rel="noopener">[1] 李军.SQL Server 2012数据库原理与应用案例教程[M].北京：北京大学出版社，2015.48-54.</a><br><a href="http://product.dangdang.com/24037080.html" target="_blank" rel="noopener">[2] 刘丽华，丁宏伟，李丹.JavaEE开发项目化教程[M].北京：清华大学出版社，2016.1-345.</a><br><a href="http://product.dangdang.com/25232002.html" target="_blank" rel="noopener">[3] 黑马程序员.JavaScript前段开发案例教程[M].北京：人民邮电出版社，2018.147-314.</a><br><a href="http://product.dangdang.com/23851582.html" target="_blank" rel="noopener">[4] 耿祥义，张跃平.Java程序设计精编教程（第2版）[M].北京：清华大学出版社，2015.85-88.</a><br><a href="http://product.dangdang.com/23656275.html" target="_blank" rel="noopener">[5] 严蔚敏，李冬梅等.数据结构：C语言版（第2版）[M].北京：清华大学出版社，2015.54-83.</a><br><a href="https://developers.google.com/style/filenames" target="_blank" rel="noopener">[6] [美] Google.Google developer documentation style guide[J/OL].Google.</a><br><a href="https://launchbylunch.com/posts/2014/Feb/16/sql-naming-conventions/" target="_blank" rel="noopener">[7] [美] Launch by Lunch.How I Write SQL,Part 1:Naming Conventions[J/OL].</a><br><a href="http://product.dangdang.com/23639789.html" target="_blank" rel="noopener">[8] 耿祥义，张跃平.JSP程序设计（第2版）[M].北京：清华大学出版社，2015.60-107. </a><br><a href="http://product.dangdang.com/24144166.html" target="_blank" rel="noopener">[9] 郭霖.第一行代码——Android（第2版）[M].北京：人民邮电出版社，2016.407-456. </a><br><a href="http://product.dangdang.com/23637007.html" target="_blank" rel="noopener">[10] 刘杰西等.Div+CSS网页样式与布局从入门到精通[M].北京：人民邮电出版社，2015.215-241.</a></p>
+
+                </article>
+                <ul class="tags-postTags">
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+    <nav id="gobottom" class="pagination">
+        
+        <span class="prev-next-post">·</span>
+        
+        <a class="next-post" title="世界杯静态网页" href="/2020/04/27/%E4%B8%96%E7%95%8C%E6%9D%AF%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5/">
+            世界杯静态网页 →
+        </a>
+        
+    </nav>
+
+    
+    <div class="inner">
+        <div id="comment"></div>
+    </div>
+    
+</div>
+
+<div class="toc-bar">
+    <div class="toc-btn-bar">
+        <a href="#site-main" class="toc-btn">
+            <svg viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M793.024 710.272a32 32 0 1 0 45.952-44.544l-310.304-320a32 32 0 0 0-46.4 0.48l-297.696 320a32 32 0 0 0 46.848 43.584l274.752-295.328 286.848 295.808z"/></svg>
+        </a>
+        <div class="toc-btn toc-switch">
+            <svg class="toc-open" viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M779.776 480h-387.2a32 32 0 0 0 0 64h387.2a32 32 0 0 0 0-64M779.776 672h-387.2a32 32 0 0 0 0 64h387.2a32 32 0 0 0 0-64M256 288a32 32 0 1 0 0 64 32 32 0 0 0 0-64M392.576 352h387.2a32 32 0 0 0 0-64h-387.2a32 32 0 0 0 0 64M256 480a32 32 0 1 0 0 64 32 32 0 0 0 0-64M256 672a32 32 0 1 0 0 64 32 32 0 0 0 0-64"/></svg>
+            <svg class="toc-close hide" viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M512 960c-247.039484 0-448-200.960516-448-448S264.960516 64 512 64 960 264.960516 960 512 759.039484 960 512 960zM512 128.287273c-211.584464 0-383.712727 172.128262-383.712727 383.712727 0 211.551781 172.128262 383.712727 383.712727 383.712727 211.551781 0 383.712727-172.159226 383.712727-383.712727C895.712727 300.415536 723.551781 128.287273 512 128.287273z"/><path d="M557.05545 513.376159l138.367639-136.864185c12.576374-12.416396 12.672705-32.671738 0.25631-45.248112s-32.704421-12.672705-45.248112-0.25631l-138.560301 137.024163-136.447897-136.864185c-12.512727-12.512727-32.735385-12.576374-45.248112-0.063647-12.512727 12.480043-12.54369 32.735385-0.063647 45.248112l136.255235 136.671523-137.376804 135.904314c-12.576374 12.447359-12.672705 32.671738-0.25631 45.248112 6.271845 6.335493 14.496116 9.504099 22.751351 9.504099 8.12794 0 16.25588-3.103239 22.496761-9.247789l137.567746-136.064292 138.687596 139.136568c6.240882 6.271845 14.432469 9.407768 22.65674 9.407768 8.191587 0 16.352211-3.135923 22.591372-9.34412 12.512727-12.480043 12.54369-32.704421 0.063647-45.248112L557.05545 513.376159z"/></svg>
+        </div>
+        <a href="#gobottom" class="toc-btn">
+            <svg viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M231.424 346.208a32 32 0 0 0-46.848 43.584l297.696 320a32 32 0 0 0 46.4 0.48l310.304-320a32 32 0 1 0-45.952-44.544l-286.848 295.808-274.752-295.36z"/></svg>
+        </a>
+    </div>
+    <div class="toc-main">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-引言"><span class="toc-text">1    引言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-需求概述"><span class="toc-text">2    需求概述</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-功能需求"><span class="toc-text">2.1    功能需求</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#一、-管理员（学校）用户"><span class="toc-text">一、 管理员（学校）用户</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#二、-学生用户"><span class="toc-text">二、 学生用户</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#三、-企业用户"><span class="toc-text">三、 企业用户</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-界面需求"><span class="toc-text">2.2    界面需求</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-界面设计"><span class="toc-text">3    界面设计</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-功能设计"><span class="toc-text">4    功能设计</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-系统模型"><span class="toc-text">4.1    系统模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-系统结构"><span class="toc-text">4.2    系统结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3-系统组成"><span class="toc-text">4.3    系统组成</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-4-E-R图"><span class="toc-text">4.4    E-R图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-5-数据库对象"><span class="toc-text">4.5    数据库对象</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-功能实现"><span class="toc-text">5    功能实现</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#5-1-登录模块"><span class="toc-text">5.1    登录模块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-2-注册模块"><span class="toc-text">5.2    注册模块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-3-管理员模块"><span class="toc-text">5.3    管理员模块</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#5-3-1-用户管理"><span class="toc-text">5.3.1    用户管理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-3-2-学生信息"><span class="toc-text">5.3.2    学生信息</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-3-3-留言管理"><span class="toc-text">5.3.3    留言管理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-4-3-就业信息"><span class="toc-text">5.4.3    就业信息</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-运行环境"><span class="toc-text">6    运行环境</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#6-1-硬件环境"><span class="toc-text">6.1    硬件环境</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-2-软件环境"><span class="toc-text">6.2    软件环境</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-使用说明"><span class="toc-text">7    使用说明</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#7-1-管理员"><span class="toc-text">7.1    管理员</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#7-1-1-审核用户用例说明："><span class="toc-text">7.1.1    审核用户用例说明：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-1-2-修改密码用例说明："><span class="toc-text">7.1.2    修改密码用例说明：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-2-学生"><span class="toc-text">7.2    学生</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#7-2-1-登录用例说明"><span class="toc-text">7.2.1    登录用例说明</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-2-2-投递简历用例说明"><span class="toc-text">7.2.2    投递简历用例说明</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-2-3-取消应聘用例说明"><span class="toc-text">7.2.3    取消应聘用例说明</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-2-4-留言用例说明"><span class="toc-text">7.2.4    留言用例说明</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-3-企业"><span class="toc-text">7.3    企业</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#7-3-1-添加招聘信息用例说明"><span class="toc-text">7.3.1    添加招聘信息用例说明</span></a></li></ol></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#7．点击添加，添加成功。"><span class="toc-text">7．点击添加，添加成功。</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#7-3-2-招聘用例说明"><span class="toc-text">7.3.2    招聘用例说明</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-结束语"><span class="toc-text">8    结束语</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-参考文献"><span class="toc-text">9    参考文献</span></a></li>
+    </div>
+</div>
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+	</div>
+	
+
+
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+            
+
+<article class="read-next-card" style="background-image: url(https://i.loli.net/2020/04/23/cXV32SznA6yqis4.jpg)">
+  <header class="read-next-card-header">
+    <small class="read-next-card-header-sitetitle">&mdash; Wis Yoong &mdash;</small>
+    <h3 class="read-next-card-header-title">最新文章</h3>
+  </header>
+  <div class="read-next-divider">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+      <path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/>
+    </svg>
+  </div>
+  <div class="read-next-card-content">
+    <ul>
+      
+      
+      
+      <li>
+        <a href="/2020/05/07/Bingo-%E5%B0%B1%E4%B8%9A%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/">Bingo 就业管理系统</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2020/04/27/%E4%B8%96%E7%95%8C%E6%9D%AF%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5/">世界杯静态网页</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2020/04/27/macOS-%E7%8E%AF%E5%A2%83%E4%B8%8B%EF%BC%8CVirtualbox-%E5%AE%89%E8%A3%85-Win10-%E8%99%9A%E6%8B%9F%E6%9C%BA%EF%BC%8C%E8%A3%85%E4%BA%86%E6%8F%92%E4%BB%B6%E5%8C%85%EF%BC%8C%E6%94%B9%E4%BA%86%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%EF%BC%8CUSB-%E8%BF%98%E6%98%AF%E4%B8%8D%E8%83%BD%E7%94%A8/">macOS 环境下，Virtualbox 安装 Win10 虚拟机，装了插件包，改了配置文件，USB 还是不能用</a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+  <footer class="read-next-card-footer">
+    <a href="/archives">  MORE  → </a>
+  </footer>
+</article>
+
+            
+            
+            
+
+
+            
+            
+            
+
+<article class="read-next-card" style="background-image: url(https://i.loli.net/2020/04/23/cXV32SznA6yqis4.jpg)">
+	<header class="read-next-card-header tagcloud-card">
+		<h3 class="read-next-card-header-title">标签云</h3>
+	</header>
+	<div class="read-next-card-content-ext">
+		<a href="/tags/CSS/" style="font-size: 14px;">CSS</a> <a href="/tags/Derby/" style="font-size: 14px;">Derby</a> <a href="/tags/HTML/" style="font-size: 14px;">HTML</a> <a href="/tags/USB/" style="font-size: 14px;">USB</a> <a href="/tags/VirtualBox/" style="font-size: 14px;">VirtualBox</a> <a href="/tags/Win10/" style="font-size: 14px;">Win10</a> <a href="/tags/caps-lock/" style="font-size: 14px;">caps lock</a> <a href="/tags/linux/" style="font-size: 14px;">linux</a> <a href="/tags/macOS/" style="font-size: 24px;">macOS</a> <a href="/tags/ubuntu/" style="font-size: 14px;">ubuntu</a> <a href="/tags/%E4%B8%96%E7%95%8C%E6%9D%AF/" style="font-size: 14px;">世界杯</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" style="font-size: 14px;">数据库</a> <a href="/tags/%E7%AC%AC%E5%85%AD%E5%B1%8A%E5%B2%AD%E5%8D%97%E6%9D%AF%E8%8B%B1%E8%AF%AD%E5%86%99%E4%BD%9C%E6%8A%80%E8%83%BD%E5%A4%A7%E8%B5%9B/" style="font-size: 14px;">第六届岭南杯英语写作技能大赛</a> <a href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/" style="font-size: 14px;">虚拟机</a> <a href="/tags/%E8%BE%93%E5%85%A5%E6%B3%95%E5%88%87%E6%8D%A2/" style="font-size: 14px;">输入法切换</a> <a href="/tags/%E9%87%91%E7%AC%94%E5%A5%96/" style="font-size: 14px;">金笔奖</a> <a href="/tags/%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5/" style="font-size: 14px;">静态网页</a>
+	</div>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+	
+
+
+
+
+<div id="search" class="search-overlay">
+    <div class="search-form">
+        
+        <div class="search-overlay-logo">
+        	<img src="https://i.loli.net/2020/04/23/JrZj1lxov2wtLMO.png" alt="Wis Yoong">
+        </div>
+        
+        <input id="local-search-input" class="search-input" type="text" name="search" placeholder="搜索 ...">
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="local-search-result"></div>
+</div>
+
+
+<footer class="site-footer outer">
+	<div class="site-footer-content inner">
+		<div class="copyright">
+			<a href="/" title="Wis Yoong">Wis Yoong &copy; 2020</a>
+			
+				
+			        <span hidden="true" id="/2020/05/07/Bingo-%E5%B0%B1%E4%B8%9A%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" class="leancloud-visitors" data-flag-title="Bingo 就业管理系统">
+			            <span>阅读量 </span>
+			            <span class="leancloud-visitors-count">0</span>
+			        </span>
+	    		
+    		
+		</div>
+        <span id="busuanzi_container_site_uv">
+          访问量:<span id="busuanzi_value_site_uv"></span>人
+        </span>
+		<nav class="site-footer-nav">
+			
+			<a href="https://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+			<a href="https://github.com/xzhih/hexo-theme-casper" title="Casper" target="_blank" rel="noopener">Casper</a>
+		</nav>
+	</div>
+    
+</footer>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+	
+
+
+<script>
+    if(window.navigator && navigator.serviceWorker) {
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+            for(let registration of registrations) {
+                registration.unregister()
+            }
+        })
+    }
+</script>
+
+
+<script id="scriptLoad" src="/js/allinone.min.js" async></script>
+
+
+<script>
+    document.getElementById('scriptLoad').addEventListener('load', function () {
+        
+        
+            var bLazy = new Blazy();
+        
+
+        
+        
+
+        
+        
+        
+            searchFunc("/");
+        
+        
+    })
+</script>
+
+
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+
+
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+
+
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+
+
+
+<script id="valineScript" src="//unpkg.com/valine/dist/Valine.min.js" async></script>
+<script>
+    document.getElementById('valineScript').addEventListener("load", function() {
+        new Valine({
+            el: '#comment' ,
+            verify: false,
+            notify: false,
+            appId: '',
+            appKey: '',
+            placeholder: 'Just go go',
+            pageSize: 10,
+            avatar: 'mm',
+            visitor: true
+        })
+    });
+</script>
+
+
+
+
+
+</body>
+</html>
